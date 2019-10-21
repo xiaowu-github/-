@@ -1,0 +1,12 @@
+<view class="model-container">
+  <view class="model-container-center">
+    <view class="orders modelAll">
+      <view class="list">
+        <view class="list-title">{{title}}</view>
+          <view class="list-name" wx:for='{{datails}}' data-id="{{item.ID}}" bindtap="goArticle">{{item.post_title}}
+          <!-- <view class="list-name" wx:for='{{item.second.third}}' data-id="{{item.term_id}}"  bindtap="goTo">{{item.name}}</view> -->
+          </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,18 @@
+  <view class="model-container">
+    <view class="model-container-center">
+      <view class="daily">
+
+        <view class="loveheart" wx:for="{{collect}}" data-id="{{item.ID}}" bindtap="goShowDatails">
+        <!-- <view class="loveheart" wx:for="{{collect}}" data-id="{{item.ID}}" > -->
+          <image src="{{url+item.picture}}"></image>
+          <view class="lovehear-content">
+            <view>{{item.post_title}}</view>
+            <view class="donate">
+            <view></view>
+              <image class="img" src="../../img/collection{{item.collect? '_active':''}}.png " data-index="{{index}}" data-collect="{{item.collect}}"  bindtap="collection" data-id="{{item.ID}}" ></image>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>

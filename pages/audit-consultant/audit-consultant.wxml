@@ -1,0 +1,111 @@
+<view wx:if='{{select==1}}' class="background">
+  <view class="read-container margin">
+    <view class="model-container-center">
+      <view class=" modelAll">
+        <!-- <view>您的账号正在审核中</view> -->
+        <view class="book modelAll">
+          <view class="model-top">
+            <text decode="true">申请成为陪伴者</text>
+            <view bindtap="more">
+              <text class="more" decode="true"></text>
+            </view>
+          </view>
+          <view class="book-recommendation">
+            <!-- <view>提交成功，请耐心等待管理员审核结果</view> -->
+            <!-- <view>点击申请成为咨询师</view> -->
+            <view class="btn" bindtap="btnSubimt">点击申请成为陪伴者</view>
+          </view>
+
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view wx:if='{{data==0}}' class="background">
+  <view class="read-container margin">
+    <view class="model-container-center">
+      <view class=" modelAll">
+        <!-- <view>您的账号正在审核中</view> -->
+        <view class="book modelAll">
+          <view class="model-top">
+            <text decode="true">审核未通过</text>
+            <view bindtap="more">
+              <text class="more" decode="true"></text>
+            </view>
+          </view>
+          <view class="book-recommendation">
+            <view>提交成功，请耐心等待管理员审核结果</view>
+            <view>预计5个工作日审核完毕，审核结果会以短信形式通知到您提 交注册的手机号上！请您耐心等待！
+            </view>
+            <view class="btns" bindtap="index">返回个人中心</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view wx:if='{{data==1}}' class="background ">
+  <view class="read-container margin">
+    <view class="model-container-center">
+      <view class=" modelAll  margin">
+        <view class="book modelAll">
+          <view class="model-top">
+            <text decode="true">审核通过</text>
+            <view bindtap="more">
+              <text class="more" decode="true"></text>
+            </view>
+          </view>
+          <view class="book-recommendation">
+            <view>恭喜，审核通过!</view>
+            <view>您已成功通过审核，成为尚善基金小程序陪伴者，请点击下方设置按钮填写您的工作时间！！</view>
+            <view class="btns" bindtap="setWrok" data-id="{{cid}}">工作设置</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view wx:if='{{data == 2}}' class="background">
+  <view class="read-container">
+    <view class="model-container-center">
+      <view class=" modelAll margin">
+        <view class="book modelAll">
+          <view class="model-top">
+            <text decode="true">审核未通过</text>
+            <view bindtap="more">
+              <text class="more" decode="true"></text>
+            </view>
+          </view>
+          <view class="book-recommendation">
+            <view>很遗憾，您提交的申请未通过审核!</view>
+            <view>本次申请审核失败，请您重新提交或XXXXXXXXXXXXXXX！！！</view>
+            <view class="btns" bindtap="index">返回首页</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view wx:if='{{data==3}}' class="background ">
+  <view class="read-container margin">
+    <view class="model-container-center">
+      <view class=" modelAll  margin">
+        <view class="book modelAll">
+          <view class="model-top">
+            <text decode="true">工作时间已设置</text>
+            <view bindtap="more">
+              <text class="more" decode="true"></text>
+            </view>
+          </view>
+          <view class="book-recommendation">
+            <view>重新设置工作时间</view>
+            <view>温馨提示:要想重新设置工作时间,请完成所有订单.</view>
+            <view class="btns" bindtap="setWrok" data-id="{{cid}}">重新设置</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

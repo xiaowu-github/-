@@ -1,0 +1,162 @@
+page {
+  background-color: #e5edfa;
+}
+.background {
+  width: 750rpx;
+  height: 70rpx;
+  /* background-color: #d3bfdc; */
+  margin-bottom: 435rpx;
+}
+
+
+.now-top{
+  margin: 23rpx 32rpx;
+  line-height: 70rpx;
+  color: #d3bfdc;
+}
+
+.now-books{
+  width: 662rpx;
+  height: auto;
+  margin:20rpx 25rpx 0 25rpx;
+  padding-bottom: 50rpx;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between
+}
+
+.now-books-single{
+  width: 200rpx;
+  height: auto;
+  float: left;
+  margin: 10rpx;
+}
+
+.now-books-img{
+  width: 200rpx;
+  height: 250rpx;
+  background-color: #ccc;
+}
+
+.book_name{
+  font-size: 28rpx;
+  font-weight: 500;
+}
+.name{
+  color: #6c6c6c;
+  font-size: 24rpx;
+}
+
+.books{
+  width: 710rpx;
+  height: auto;
+}
+
+.nav-item{
+  width: 25%;
+  height: 70rpx;
+  line-height: 70rpx;
+  float: left;
+  text-align: center;
+  color:#000;
+  font-weight: 600;
+  border-bottom: 2rpx solid #eee;
+}
+
+.nav-item.active {
+  color: #2f7ecd;
+  font-weight: 600;
+
+}
+
+.scroll-view{
+  display: flex;
+  justify-content: space-between;
+  width: 650rpx;
+  height: 70rpx;
+  margin: 0 30rpx;
+}
+
+swiper{
+  height: auto;
+}
+
+.movie-details{
+  width: 650rpx;
+  height: auto;
+  padding-bottom: 43rpx;
+  margin: 43rpx auto;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 2rpx solid #eee;
+}
+.movie-recommendation>view:last-child{
+  width: 650rpx;
+  height: auto;
+  padding-bottom: 43rpx;
+  margin-bottom:0;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 2rpx solid #eee;
+}
+
+.movie-recommendation>view:first-child{
+  width: 650rpx;
+  height: auto;
+  padding-bottom: 43rpx;
+  padding-top: 43rpx;
+  margin-bottom:0;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 2rpx solid #eee;
+}
+
+.movie-details-img{
+  width: 196rpx;
+  height: 254rpx;
+  display: flex;
+  background-color: #ccc
+}
+
+.movie-details-right{
+  width: 424rpx;
+  height: 254rpx;
+  margin-left: 34rpx;
+  float: left;
+}
+
+.movie_name{
+  font-size: 28rpx;
+  font-weight: 500rpx;
+}
+.movie_Plot{
+  font-size: 24rpx;
+  color:#6c6c6c;
+  margin-top: 40rpx;
+margin-bottom: 12rpx;
+}
+.movie_time{
+  font-size: 24rpx;
+  color:#6c6c6c;
+  margin-bottom: 20rpx;
+}
+
+.movie_introduction{
+    font-size: 24rpx;
+  color:#6c6c6c;
+}
+
+.movie{
+  padding-bottom: 50rpx;
+}
+.books-more{
+  font-size: 24rpx;
+  color: #6c6c6c;
+  text-align: center;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+
+.movie-recommendation{
+  width: 710rpx
+}

@@ -1,0 +1,89 @@
+<form bindsubmit="formSubmit">
+  <view class="model-container">
+    <view class="model-container-center">
+      <view class="comment modelAll">
+        <view class="confirm-order">
+          <view>待确认</view>
+          <view>请在30分钟之内确认订单,否则该订单会自动取消</view>
+        </view>
+
+        <!-- <view class="lists">
+          <view class="lists-top">
+            <image src="{{info.piture}}"></image>
+            <view class="lists-data">
+              <view>陪伴志愿者：{{info.name}}</view>
+              <view class="star">
+                  <image src="../../img/reservation-consultation/css_sprites-{{info.score}}.png" style='background-image:no-repeat top; width:220rpx;height:50rpx;background-size: 30rpx' data-index="{{index}}" bindtap='score'></image>
+              </view>
+              <view class="label">
+                <block wx:for="{{info.tag}}">
+                  <view>{{item.name}}</view>
+                </block>
+              </view>
+            </view>
+          </view>
+        </view> -->
+
+        <view>
+          <view class="lists">
+            <image src="{{info.piture}}"></image>
+            <view class="lists-data">
+              <view style="font-size:36rpx;font-weight:bold;">{{info.name}}</view>
+              <view style="font-size:30rpx;color:#999;line-height:38rpx;">{{info.introduction}}哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</view>
+              <view class="tag_name">
+                <block wx:for='{{info.tag}}'>
+                  <view>{{item.name}}</view>
+                </block>
+              </view>
+            </view>
+            <!-- <view class="btn">预约</view> -->
+          </view>
+        </view>
+
+        <view class="ordre-time">
+          <view>陪伴时间：{{info.consultant_time.y}}-{{info.consultant_time.m}}-{{info.consultant_time.d}} {{info.consultant_time.h}}</view>
+          <view>订单编号：{{info.order_on}}</view>
+        </view>
+
+        <view class="button">
+          <button form-type="submit">确认预约陪伴</button>
+        </view>
+      </view>
+    </view>
+  </view>
+</form>
+
+
+
+<block wx:if="{{show}}">
+  <view class="barrier" bindtap="barrier"></view>
+  <!-- <image class='images' src="https://miniapp.shangshan.org.cn/web/statics/images/foundationImg/article-list/susee_03.png"></image> -->
+  <view class="appointment-success">
+    <view class="appointment-top">
+      <view>恭喜您! 预约成功!</view>
+      <!-- <view>{{month}}月{{day}}日/星期{{week}}/{{hours}}</view> -->
+    </view>
+    <view class="appointment-data">
+      <view class="appointment-datalis">
+        <view>预约单号:</view>
+        <view>{{info.order_on}}</view>
+      </view>
+      <view class="appointment-datalis">
+        <view>预约时间:</view>
+        <view>{{info.consultant_time.y}}-{{info.consultant_time.m}}-{{info.consultant_time.d}} {{info.consultant_time.h}}</view>
+      </view>
+      <view class="appointment-datalis">
+        <view>陪伴志愿者:</view>
+        <view>{{info.name}}</view>
+      </view>
+    </view>
+    <view class="buttons">
+      <view class="btn" bindtap="confirm">确定</view>
+    </view>
+    <view class="appointment-bottom">
+
+      <view>温馨提示:预约订单请在个人中心查看</view>
+    </view>
+  </view>
+
+</block>

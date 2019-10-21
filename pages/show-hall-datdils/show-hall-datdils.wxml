@@ -1,0 +1,56 @@
+<!-- <view class="model-container" > -->
+<!-- <view class="model-container-center color"> -->
+<!-- <view class="orders modelAll" > -->
+<view class="title">{{data.post_title}}</view>
+<view class="section tc" wx:if='{{show}}'>
+  <video id="myVideo" src="{{data.video}}" danmu-list="{{danmuList}}" controls></video>
+  <view class="btn-area">
+  </view>
+</view>
+<view class="rich-text">
+  <rich-text nodes="{{nodes}}"></rich-text>
+</view>
+
+<view class="model-container">
+  <view class="model-container-center">
+    <view class="comment  modelAll">
+      <view class="model-top1">
+        <text decode="true">|&nbsp;用户评论</text>
+        <view>
+          <text class="more"></text>
+        </view>
+      </view>
+      <view class="comment-bottom" wx:if='{{code==0}}' wx:for='{{datails}}'>
+        <view class="comment-comment">
+          <view class="comment-comment-left">
+            <image src="{{item.avatar_url}}"></image>
+            <view>{{item.nickname}}</view>
+            <view>{{item.time}}</view>
+          </view>
+          <!-- <view bindtap="writeComment">写评论</view> -->
+        </view>
+        <view class="comments  {{isShow ? 'on' : ''}}" >{{item.content}}</view>
+        <!-- <view class="audition-open">
+          <image src="{{isShow ? '../../img/audition-images/audition-colse.png' : '.../../img/audition-images/audition-open.png'}}" bindtap="toggle"></image>
+        </view> -->
+      </view>
+      <view class="none"  wx:if='{{code==1}}'>
+        暂无更多评论
+      </view>
+    </view>
+  </view>
+</view>
+
+
+
+<view class="bottom">
+  <!-- <view class="bottom-top"> -->
+  <!-- <view bindtap="menu" data-index="{{0}}" class="forward {{select==0 ? 'beform': ''}}">目录
+    </view>
+    <view bindtap="forWard" data-index="{{1}}" class="forward {{select==1 ? 'beform': ''}}">转发</view>
+  </view> -->
+  <view class="lssue-opinion" data-id='{{data.ID}}' data-title="{{data.post_title}}"  bindtap="writeComment">发表评论...</view>
+</view>
+<!-- </view> -->
+<!-- </view> -->
+<!-- </view> -->

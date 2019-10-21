@@ -1,0 +1,38 @@
+
+<view class="title">{{datails.post_title}}</view>
+<view class="rich-text">
+  <rich-text nodes="{{nodes}}"></rich-text>
+</view>
+
+<view class="model-container">
+  <view class="model-container-center">
+    <view class="comment  modelAll">
+      <view class="model-top1">
+        <text decode="true">|&nbsp;用户评论</text>
+        <view>
+          <text class="more"></text>
+        </view>
+      </view>
+      <view class="comment-bottom" wx:if='{{code==0}}' wx:for='{{comment_list}}'>
+        <view class="comment-comment">
+          <view class="comment-comment-left">
+            <image src="{{item.avatar_url}}"></image>
+            <view>{{item.nickname}}</view>
+            <view>{{item.time}}</view>
+          </view>
+          <!-- <view bindtap="writeComment">写评论</view> -->
+        </view>
+        <view class="comments  {{isShow ? 'on' : ''}}" >{{item.content}}</view>
+      </view>
+      <view class="none"  wx:if='{{code==1}}'>
+        暂无更多评论
+      </view>
+    </view>
+  </view>
+</view>
+
+
+
+<view class="bottom">
+  <view class="lssue-opinion" data-id='{{datails.ID}}' data-title="{{datails.post_title}}"  bindtap="writeComment">发表评论...</view>
+</view>

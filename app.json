@@ -1,0 +1,153 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/search/search",
+    "pages/order/order",
+    "pages/favorite/favorite",
+    "pages/share/share",
+    "pages/cash/cash",
+    "pages/share-money/share-money",
+    "pages/cash-detail/cash-detail",
+    "pages/share-team/share-team",
+    "pages/share-order/share-order",
+    "pages/share-qrcode/share-qrcode",
+    "pages/coupon/coupon",
+    "pages/clerk/clerk",
+    "pages/video/video-list",
+    "pages/coupon-list/coupon-list",
+    "pages/web/web",
+    "pages/quick-purchase/index/index",
+    "pages/balance/balance",
+    "pages/recharge/recharge",
+    "pages/bangding/bangding",
+    "pages/web/login/login",
+    "pages/web/authorization/authorization",
+    "pages/balance/detail",
+    "pages/login/login",
+    "pages/store-disabled/store-disabled",
+    "pages/coupon-detail/coupon-detail",
+    "pages/card-detail/card-detail",
+    "pages/companys/companys",
+    "pages/consultant/consultant",
+    "pages/audition/audition",
+    "pages/bookdetails/bookdetails",
+    "pages/common/common",
+    "pages/evaluation/evaluation",
+    "pages/history-orders/history-orders",
+    "pages/list-books/list-books",
+    "pages/logs/logs",
+    "pages/personalcenter/personalcenter",
+    "pages/player/player",
+    "pages/reception-time/reception-time",
+    "pages/recommendation/recommendation",
+    "pages/reservation-consultation/reservation-consultation",
+    "pages/user-personal/user-personal",
+    "pages/comments/comments",
+    "pages/Trtc/webrtc-room/index/index",
+    "pages/Trtc/webrtc-room/room/room",
+    "pages/audit-consultant/audit-consultant",
+    "pages/auditions-list/auditions-list",
+    "pages/myselfset/myselfset",
+    "components/navbar/navbar",
+    "pages/contribute/contribute",
+    "pages/article-list/article-list",
+    "pages/show-hall/show-hall",
+    "pages/show-hall-list/show-hall-list",
+    "pages/show-hall-datdils/show-hall-datdils",
+    "pages/companys-list/companys-list",
+    "pages/book-managem/book-managem",
+    "pages/recruit/recruit-hall",
+    "pages/recruit-detail/recruit-detail"
+  ],
+  "subPackages": [
+    {
+      "root": "mch/",
+      "pages": [
+        "m/myshop/myshop",
+        "m/setting/setting",
+        "m/goods/goods",
+        "m/order/order",
+        "m/order-detail/order-detail",
+        "m/order-send/order-send",
+        "m/shop-qrcode/shop-qrcode",
+        "m/account/account",
+        "m/account-rest/account-rest",
+        "m/account-log/account-log",
+        "m/cash-log/cash-log",
+        "m/tongji/tongji",
+        "m/order-refund/order-refund",
+        "apply/apply",
+        "shop/shop",
+        "shop-list/shop-list",
+        "shop-cat/shop-cat",
+        "m/cash/cash",
+        "m/settle_detail/settle_detail",
+        "shop-summary/shop-summary"
+      ]
+    },
+    {
+      "root": "pond/",
+      "pages": [
+        "pond/pond",
+        "prize/prize",
+        "rule/rule"
+      ]
+    },
+    {
+      "root": "bargain/",
+      "pages": [
+        "goods/goods",
+        "list/list",
+        "activity/activity",
+        "order-list/order-list",
+        "rule/rule"
+      ]
+    },
+    {
+      "root": "scratch/",
+      "pages": [
+        "index/index",
+        "prize/prize",
+        "rule/rule"
+      ]
+    },
+    {
+      "root": "lottery/",
+      "pages": [
+        "index/index",
+        "detail/detail",
+        "goods/goods",
+        "prize/prize",
+        "rule/rule",
+        "lucky-code/lucky-code"
+      ]
+    },
+    {
+      "root": "step/",
+      "pages": [
+        "index/index",
+        "detail/detail",
+        "goods/goods",
+        "dare/dare",
+        "rules/rules",
+        "top/top",
+        "join/join",
+        "log/log",
+        "share/share",
+        "friend/friend"
+      ]
+    }
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "尚善暖心行动",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#e8deed"
+  },
+  "debug": false,
+  "navigateToMiniProgramAppIdList": [
+    "wxe5f52902cf4de896"
+  ],
+  "sitemapLocation": "sitemap.json"
+}

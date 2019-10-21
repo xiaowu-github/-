@@ -1,0 +1,136 @@
+<!-- <view class="model-container">
+  <include src="/components/common/common"></include>
+  <view class="model-container-center">
+    <view class="personal modelAll">
+      <view class="project">暖心陪伴</view>
+    </view>
+  </view>
+</view> -->
+<include src="/components/common/common"></include>
+<view style="padding-bottom:220rpx;">
+  <view>
+    <view class="model-container">
+      <view class="model-container-center">
+        <view class="personal modelAll">
+          <view class="introduce" data-id="{{datails.introduction.object_id}}" bindtap="goStroyList">
+            <image src="{{url}}{{datails.introduction.picture}}"></image>
+            <!-- <view class="all">
+              <view>{{datails.introduction.post_title}}</view>
+              <view>{{datails.introduction.post_content}}</view>
+            </view> -->
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view class="model-container" wx:if='{{hidden}}'>
+    <!-- wx:if='{{!show1}}' -->
+      <view class="model-container-center">
+        <view class="personal modelAll">
+          <view class="">
+            <view class="section tc">
+              <video id="myVideo" src="{{datails.video.video}}" danmu-list="{{danmuList}}" controls='true' poster='{{url+datails.video.picture}}'></video>
+              <view class="btn-area">
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view class="model-container">
+      <view class="model-container-center">
+        <view class="daily">
+          <view>
+            <view class="follow">暖心故事</view>
+            <!-- <view class="more">更多 ></view> -->
+          </view>
+          <view class="alls">
+            <scroll-view scroll-x="true">
+              <view class="scroll-item" wx:for="{{datails.story}}" data-id="{{item.object_id}}" bindtap="goStroyList">
+                <image mode="widthFix " src="{{url+item.picture}}"></image>
+                <!-- <view class="scroll-text">
+                  <view class="scroll-text1">{{item.post_title}}</view>
+                  <view class="scroll-text2">{{item.post_content}}</view>
+                </view> -->
+              </view>
+            </scroll-view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  
+  <view class="appointment" bindtap="appoint1">我要预约</view>
+</view>
+
+
+<view  wx:if='{{!show}}'>
+<view  wx:if='{{according}}' style="position: fixed;width:100%;height:100%;left:0;top:0;">
+  <view style="width:680rpx;height:820rpx;position: fixed;margin: auto;left:0;right:0;top:0;bottom:0;background:#fff;z-index:100;border-radius: 30rpx;">
+    <scroll-view scroll-y="true" style="height: 820rpx;padding:20rpx;">
+      <view style="padding:20rpx;">
+        <text style="font-size:38rpx;text-align:center;display:block;padding-bottom:20rpx;">知情同意书</text>
+        <text style="text-align:justify;white-space: pre-line;display:block ;font-size:34rpx;" decode="{{true}}"> &emsp;&emsp;“暖心陪伴”是北京尚善基公益金会(简称尚善)专为失独同命人开展的一项精神慰藉公益项目，由经过培训考核的同命人作为暖心陪伴者，为正处于悲痛阶段的同命人提供线上陪伴和精神蔚籍。我们倡导“自助、互助、他助”的精神理念, 携手走出哀伤，重振生活信念。  
+      </text>
+        <text style="text-align:justify;white-space: pre-line;display:block ;font-size:34rpx;" decode="{{true}}"> &emsp;&emsp;暖心陪伴者本着“奉献、互助、进步，不为物质报酬，自愿在线上陪伴同命人”的宗旨，为求助的同命人提供在线倾听和抚慰。为了维护双方利益，保证在线陪伴顺利进行，敬请知悉并遵守以下事项：   
+      </text>
+        <text style="text-align:justify;white-space: pre-line;display:block ;font-size:34rpx;" decode="{{true}}">
+    &emsp;&emsp;1、请放心填写预约申请的资料，尚善承诺您的个人隐私及交流内容，将受到严格保密。
+      </text>
+        <text style="text-align:justify;white-space: pre-line;display:block ;font-size:34rpx;" decode="{{true}}">
+    &emsp;&emsp;2、预约成功后，请您遵守约定的时间，按时上线。如有变更，请提前2小时取消本次预约；超出约定时间15分钟未能上线，则视为爽约，连续2次爽约，或未在规定时间内取消预约的，只能在一个月后重新预约。
+      </text>
+        <text style="text-align:justify;white-space: pre-line;display:block ;font-size:34rpx;padding-bottom:20rpx;" decode="{{true}}">
+    &emsp;&emsp;3、在陪伴过程中，如因本人身体不适、精神过度悲伤等造成的后果；以及您和陪伴者私下进行的线上、线下的会谈及会面，视为双方个人行为，尚善不承担任何责任。
+      </text>
+        <text style="text-align:right;white-space: pre-line;display:block ;font-size:34rpx;">北京尚善公益基金会</text>
+        <text style="text-align:right;white-space: pre-line;display:block ;font-size:34rpx;">2019年10月25日</text>
+
+        <view class="group" bindtap="consentForm" data-index="{{indexs}}" style="margin-top:30rpx;">
+          <icon type="success" size="20" color="{{consent_iconColor}}" />
+          <view>我已知晓并同意遵守《知情同意书》</view>
+        </view>
+
+
+        <!-- <view class="group" bindtap="" style="margin-top:30rpx;">
+          <icon type="success" size="20" color="{{iconColor}}" />
+          <view>我已知晓并同意遵守《知情同意书》</view>
+        </view> -->
+
+        <view class="choose">
+          <view class="cancel"  bindtap="cancel">取消</view>
+          <view class="confirm" bindtap="confirm" style=" background-color: {{consent_btn_color}};"data-staus="{{staus}}">确认</view>
+        </view>
+      </view>
+    </scroll-view>
+
+  </view>
+  <view style="position: fixed;width:100%;height:100%;background:#000;opacity: .8;left:0;top:0;">
+
+  </view>
+</view>
+</view>
+
+
+
+
+
+
+
+<!-- 
+<view>
+  <view class="reading-relus" wx:if='{{according==1}}'>
+    <scroll-view scroll-y="true" style="height: 110rpx;">
+      <view class="relus">
+        <view>知情同意书</view>
+        <view style="text-align: justify;font-size:34rpx;width:100rpx">“暖心陪伴”是北京尚善基公益金会(简称尚善)专为失独同命人开展的一项精神慰藉公益项目，由经过培训考核的同命人作为暖心陪伴者，为正处于悲痛阶段的同命人提供线上陪伴和精神蔚籍。我们倡导“自助、互助、他助”的精神理念, 携手走出哀伤，重振生活信念。</view>
+        <view style="text-align: justify;font-size:34rpx;">暖心陪伴者本着“奉献、互助、进步，不为物质报酬，自愿在线上陪伴同命人”的宗旨，为求助的同命人提供在线倾听和抚慰。为了维护双方利益，保证在线陪伴顺利进行，敬请知悉并遵守以下事项：</view>
+        <view style="text-align: justify;font-size:34rpx;">1、请放心填写预约申请的资料，尚善承诺您的个人隐私及交流内容，将受到严格保密。</view>
+        <view style="text-align: justify;font-size:34rpx;">2、预约成功后，请您遵守约定的时间，按时上线。如有变更，请提前2小时取消本次预约；超出约定时间15分钟未能上线，则视为爽约，连续2次爽约，或未在规定时间内取消预约的，只能在一个月后重新预约。</view>
+        <view style="text-align: justify;font-size:34rpx;">3、在陪伴过程中，如因本人身体不适、精神过度悲伤等造成的后果；以及您和陪伴者私下进行的线上、线下的会谈及会面，视为双方个人行为，尚善不承担任何责任。</view>
+      </view>
+    </scroll-view>
+  </view>
+</view> -->

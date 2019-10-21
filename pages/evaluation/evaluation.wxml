@@ -1,0 +1,55 @@
+<view class="background">
+  <view class="read-container">
+    <view class="model-container-center">
+
+      <view class="orders modelAll" wx:for="{{orders}}">
+        <view class="orders-all">
+          <view class="orders-top">
+            <image class="orders-img"></image>
+            <view class="orders-data">
+              <view>陪伴志愿者：{{item.techer}}</view>
+              <view>服务时间：{{item.time}}</view>
+              <view>服务时长：{{item.duration}}</view>
+            </view>
+          </view>
+          <view class="orders-bottom">
+            <view class="order-time">
+              <view>创建时间：{{item.found}}</view>
+              <view>单号：{{item.order_number}}</view>
+            </view>
+            <view class="order-state" wx-if='{{!item.state}}'>{{item.order_datali1}}</view>
+            <view class="order-notstar" wx:else='{{item.state}}'>
+              <view class="evaluate" bindtap="comments">待评价{{state1}}</view>
+              <view class="order-state2">{{item.order_datali}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<block wx:if='{{show}}'>
+<view class="barrier">
+
+</view>
+<view class="contents">
+  <view class="content">
+    <view class="pingjia">
+      <view class="close" bindtap="close"><image src="../../img/close_05.png"></image></view>
+      <view class="evaluation">评价</view>
+    </view>
+    <form bindsubmit="formSubmit">
+    <view class="stars">
+      <view wx:for="{{stars}}" style='background:url("{{item.flag==1?item.bgImg:item.bgfImg}}")  no-repeat top; width:50rpx;height:50rpx;background-size: 50rpx' data-index="{{index}}" bindtap='score'>{{item.flag}}</view>
+    </view>
+    <view class="biaoqian">
+      <view class="shuxing" wx:for='{{biaoqian}}'>{{item.shuxing}}</view>
+    </view>
+    <view class="wrtie">
+    <textarea maxlength="200" placeholder="发表评论..."></textarea></view>
+    <button>提交评价</button>
+    </form>
+  </view>
+</view>
+</block>

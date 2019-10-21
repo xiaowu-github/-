@@ -1,0 +1,33 @@
+<view class="background">
+  <view class="read-container">
+    <view class="model-container-center">
+      <view class=" modelAll">
+        <view class="time-year">
+        </view>
+
+        <form bindsubmit="formSubmit">
+        <view class="days">
+          <scroll-view scroll-x="true">
+            <view class="day {{select ==  index ? 'add' : ''}} " wx:for="{{week}}" data-index="{{index}}" data-conten="{{item.days}}" data-year="{{item.y}}" data-month="{{item.m}}" data-date="{{item.d}}" data-day="{{item.day}}" bindtap="choice">
+              <view>{{item.day}}</view>
+            </view>
+          </scroll-view>
+        </view>
+        <view class="time">
+          <block wx:for="{{time}}">
+          <!-- 可选择 -->
+            <view data-head="{{h_index}}" class="hour {{item.boolean ? 'houradd': '' }}"  data-index="{{index}}" data-hour="{{item.time}}" bindtap="choiceHour">{{item.time}}
+            </view>
+          </block>
+        </view>
+
+        <view class="time-set">
+          <button form-type='submit' class="set">设 置 完 成</button>
+          <!-- <view class="set">设 置 完 成</view> -->
+          <view class="tishi">友情提示：请确认好开始接受预约时间段</view>
+        </view>
+      </form>
+      </view>
+      </view>
+    </view>
+  </view>

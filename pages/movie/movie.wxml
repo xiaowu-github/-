@@ -1,0 +1,59 @@
+<view class="background">
+  <view class="read-container">
+    <view class="model-container-center">
+      <view class='images'>
+        <swiper class='detail-imgs' indicator-active-color="#d3bfdc" indicator-dots="{{true}}" autoplay='{{true}}' interval="{{3000}}" duration="{{500}}" circular="{{true}}" bindchange='bindchange' style="height:{{imgheights[current]}}rpx;">
+          <block wx:for="{{imgUrls}}">
+            <swiper-item style="">
+              <image src="{{item}}" class='image-view' style="height:{{imgheights[current]}}rpx;width:100%;" bindload="imageLoad" data-src='{{item}}'></image>
+            </swiper-item>
+          </block>
+        </swiper>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="read-container">
+  <view class="model-container-center">
+    <view class="navigation-icon">
+      <view wx:for='{{navigation_icon}}'>
+        <image src="{{item.iconsrc}}"></image>
+        <view>{{item.icontext}}</view>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+<view class="read-container">
+  <view class="model-container-center">
+    <view class="gooodsp">
+      <view class="some-great">有好片 ></view>
+      <view class="all-datails">
+        <view class="gooodsp-datails" wx:for='{{gooodsp}}'>
+          <image src="{{item.iconsrc}}"></image>
+          <view>{{item.icontext}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+<view class="read-container">
+  <view class="model-container-center">
+    <view class="movie-store">
+      <view class="movie-stores">电影铺子   ></view>
+      <view class="movie-store-datails"  wx:for='{{movie_store}}' bindtap="click">
+        <image></image>
+        <view class="datails">
+          <view>{{item.icontext}}</view>
+          <view>{{item.plot}}</view>
+          <view>{{item.time}}</view>
+          <view>{{item.introduce}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,55 @@
+<view class="orders modelAll">
+  <!-- wx:for="{{order_datalis}}" -->
+  <view class="orders-all">
+    <view class="orders-top">
+      <image class="orders-img" src="{{info.piture}}"></image>
+      <view class="orders-data">
+        <view>陪伴志愿者：{{info.name}}</view>
+        <block>
+          <view>预约时间：{{stime}}</view>
+        </block>
+        <view>服务时长：90分钟</view>
+      </view>
+    </view>
+    <view class="orders-bottom">
+      <view>{{show_text}}</view>
+      <view wx:if='{{order_status==0 || order_status==1}}'>
+        还剩:{{times.days}}天{{times.hours}}小时{{times.minutes}}分钟{{times.seconds}}秒
+      </view>
+      <view wx:if='{{order_status==2}}'>{{show_text2}}</view>
+    </view>
+  </view>
+</view>
+
+
+<view class="model-containers">
+  <view class="model-container-center">
+    <view class="comment modelAll">
+      <view class='images'>
+        <swiper class='detail-imgs' indicator-active-color="#d3bfdc" indicator-dots="{{true}}" autoplay='{{true}}' interval="{{3000}}" duration="{{500}}" circular="{{true}}" bindchange='bindchange' style="height:{{imgheights[current]}}rpx;">
+          <block>
+            <swiper-item style="">
+              <image src="{{imgUrls}}" class='image-view' style="height:{{imgheights[current]}}rpx;width:{{imgwidth}}rpx;" bindload="imageLoad" data-src='{{item}}'></image>
+              <!-- <view class="content">
+                <view>xxxxxxxxxxxxxxxxxx</view>
+                <view>hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh</view>
+              </view> -->
+            </swiper-item>
+          </block>
+        </swiper>
+      </view>
+      <!-- <view class="radio" bindtap="stars"></view> -->
+      <!-- <view class="text">
+        <view>《哈哈哈哈哈哈哈》</view>
+        <view>哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</view>
+      </view>
+      <view class="reading">
+        请您认真阅读以上事项
+      </view> -->
+
+
+      <view class="gotoroom" bindtap="joinRoom">进入房间</view>
+      <!-- <view class="gotoroom color" wx:if="{{order_status==2||order_status==0}}">进入房间</view> -->
+    </view>
+  </view>
+</view>

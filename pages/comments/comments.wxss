@@ -1,0 +1,49 @@
+page {
+  background-color: #e5edfa;
+}
+
+.write{
+  background-color: #fff;
+}
+.problem{
+  margin:0rpx 20rpx;
+  padding:30rpx  0rpx;
+  border-bottom: 2rpx solid #eee;
+  /* color: #a0a0a0 */
+}
+
+.textarea{
+  border-bottom: 2rpx solid #eee;
+  height: auto;
+  min-height: 200rpx;
+  width: 670rpx;
+  margin: 20rpx;
+}
+
+.btn{
+  width: 270rpx;
+  height: 50rpx;
+  background-color: #f7f7f7;
+  color: #d7d7d7;
+  font-size: 30rpx;
+  font-weight: 600;
+  line-height: 50rpx;
+  margin: 50rpx auto;
+  align-items: center;
+}
+.btns{
+    width: 270rpx;
+  height: 50rpx;
+  background-color: #d3bfdc;
+  color: #fff;
+  font-size: 30rpx;
+  font-weight: 600;
+  line-height: 50rpx;
+  margin: 50rpx auto;
+  align-items: center;
+}
+
+.write>view:last-child{
+  height: 100rpx;
+
+}

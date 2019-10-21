@@ -1,0 +1,125 @@
+page {
+  background-color: #e5edfa;
+}
+
+.menu {
+  padding: 40rpx;
+}
+
+.section {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  padding-bottom: 30rpx;
+  padding-top: 30rpx;
+  font-size: 30rpx;
+  border-bottom: 2rpx solid #eee;
+}
+
+.section>input {
+  margin-left: 30rpx;
+}
+
+.laber {
+  width: 530rpx;
+  border-radius: 15rpx;
+  background-color: #eee;
+  margin-left: 30rpx;
+}
+
+.itemlaber {
+  margin: 15rpx;
+  margin-left: 10rpx;
+  float: left;
+  background-color: #fff;
+  border-radius: 15rpx;
+}
+
+.btn {
+  width: 100%;
+  font-size: 30rpx;
+  background: #eee;
+  border-radius:10px;
+  text-align: center;
+  line-height: 80rpx;
+  background-color: #d3bedb;
+  color: #fff;
+  /* margin-top: 30rpx; */
+}
+
+.btn-selected {
+  margin: 15rpx;
+  margin-left: 10rpx;
+  float: left;
+  border-radius: 15rpx;
+  background-color: #d3bedb;
+  color: #fff;
+}
+
+
+.radio {
+    margin-left: 10px;
+}
+
+ .btn-submit{border:solid 5px #f00;color:#f00}
+
+
+
+radio .wx-radio-input{
+  width: 36rpx;
+  height: 36rpx;
+  border-radius: 50%;
+  margin-top: -4rpx;
+}
+radio .wx-radio-input.wx-radio-input-checked{
+  width: 36rpx;
+  height: 36rpx;
+  border: 1px solid #8CD241 !important;
+  background: #fff !important;
+}
+radio .wx-radio-input.wx-radio-input-checked::before{
+  border-radius: 50%;
+  text-align: center;
+  color: #8CD241;
+  font-size: 30rpx;
+  transform:translate(-50%, -50%) scale(1);
+  -webkit-transform:translate(-50%, -50%) scale(1);
+}
+
+
+.book-recommendation{
+  width: 655rpx;
+  /* height: 120rpx; */
+  padding: 58rpx 0rpx;
+  margin: 0 auto;
+}
+
+.book-recommendation view:first-child{
+  font-size: 30rpx;
+  font-weight: 700rpx;
+  text-align: center
+}
+
+.book-recommendation view:nth-child(2){
+  padding: 30rpx 0rpx;
+  font-size: 25rpx;
+  color:#8e8e8e;
+  border-bottom: 2rpx solid #eee;
+}
+
+
+.btns{
+  width: 220rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  color: #fff;
+  background-color: #d3bfdc;
+  font-size: 30rpx;
+  margin: 40rpx auto 0rpx auto ;
+  text-align: center;
+  border-radius: 10rpx;
+}
+
+.margin{
+  position: fixed;
+}

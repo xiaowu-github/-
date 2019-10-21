@@ -1,0 +1,96 @@
+<view class="{{pgcolor}}">
+  <view class="container">
+    <view class="model-container-center">
+      <view class="bookdetails bookdetailsAll">
+        <view class="bookdetails-content  {{pgcolor}}">
+          <view class="bookdetails-switch">
+            <view bindtap='preArticle'>
+              <image class="bookdetails-img" src="../../img/bookdetails-images/bookdetails-img-01.png"></image>
+              上一章</view>
+            <view bindtap='nextArticle'>下一章
+              <image class="bookdetails-img" src="../../img/bookdetails-images/bookdetails-img-02.png"></image>
+            </view>
+          </view>
+          <view class="bookdetails-text">
+            <view class="bookdetails-qianyan" style="font-size: {{15+font}}rpx;">前言：</view>
+            <view class="bookdetails-qianyan" style="font-size: {{15+font}}rpx;">{{datails.post_title}}</view>
+            <view class="bookdetails-contents" style="font-size: {{15+font}}rpx;">
+                <rich-text  style="letter-spacijng:5rpx;line-height: {{45+font}}rpx;" nodes="{{nodes}}"></rich-text>
+            </view>
+          </view>
+          <view class="bookdetails-chapter" bindtap='nextArticle'>下一章</view>
+
+          <!-- <view class="bookdetails-btn">
+          <view class="bookdetails-btn-one">
+            <view class="bookdetails-catalog"  bindtap="menu" data-index="{{0}}" class="forward {{select==0 ? 'beform': ''}}">目录</view>
+            <view class="bookdetails-catalog">设置</view>
+          </view>
+          <view class="bookdetails-btn-two">
+            <view class="bookdetails-btn-click">点击听书</view>
+            <image src="../../img/bookdetails-images/bookdetails-img-03.png"></image>
+          </view>
+        </view> -->
+        </view>
+      </view>
+    </view>
+  </view>
+
+
+  <!-- 目录 -->
+  <view class="bottom  {{pgcolor}}">
+    <!-- <view class="bottom-top"> -->
+    <view bindtap="menu" data-index="{{0}}" class="forward {{select==0 ? 'beform': ''}}">目录</view>
+    <view bindtap="setFont" data-index="{{1}}" class="forward {{select==1 ? 'beform': ''}}">设置</view>
+    <!-- <view class="lssue-opinion">发表评论...</view> -->
+    <view class="bookdetails-btn-two" wx:if="{{state==0}}" bindtap="lisetIng"  data-mpSrc="{{datails.audio}}">
+      <view class="bookdetails-btn-click">点击听书</view>
+      <!-- <image wx:if="{{state==1}}" src="../../img/reservation-consultation/audio-play.svg"></image> -->
+      <image src="../../img/reservation-consultation/audio-pause.svg"></image>
+    </view>
+
+    <view class="bookdetails-btn-two" wx:if="{{state==1}}" bindtap="stopIng"  data-mpSrc="{{datails.audio}}" >
+      <view class="bookdetails-btn-click">点击暂停</view>
+       <image src="../../img/reservation-consultation/audio-play.svg"></image>
+    </view>
+    <!-- </view> -->
+  </view>
+
+
+  <view class="chapter">
+    <view style="{{position}}" class="layer" bindtap="layer"></view>
+    <view class="anima {{transition}} {{pgcolor}}">
+      <view class="chapter-top">
+        <view class="chapter-name">《重燃生命之光》</view>
+      </view>
+      <view class="chapter-content">
+        <scroll-view class="scroll-box" scroll-y lower-threshold="30" bindscrolltolower="scrollData">
+          <view class="list-name" wx:for='{{menuLists}}' data-id="{{item.ID}}" bindtap="goArticle">{{item.post_title}}
+          </view>
+        </scroll-view>
+      </view>
+    </view>
+  </view>
+
+  <view class="set ">
+    <view style="{{position2}}" class="sets" bindtap="layer"></view>
+    <view class="set-font anima2  {{transition2}}  {{pgcolor}}">
+      <view class="set-one">
+        <view>小</view>
+        <view class="section section_gap">
+          <view class="body-view">
+            <slider bindchange="slider2change" step="10" min="10" block-size='20' value='30' activeColor='#eee' backgroundColor='#eee' />
+            <view class="all-shuxian">
+              <view class="shuxian" wx:for="{{shuxian}}">{{shuxian.shunx}}</view>
+            </view>
+          </view>
+        </view>
+        <view>大</view>
+      </view>
+      <view class="set-color">
+        <view bindtap="white">白底黑字</view>
+        <view bindtap="black">黑底白字</view>
+      </view>
+      <view class="set-text">拖动圆点改变文字大小</view>
+    </view>
+  </view>
+</view>

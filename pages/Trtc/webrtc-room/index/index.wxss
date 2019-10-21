@@ -1,0 +1,150 @@
+/* pages/webrtc-room-demo/join-room-by-id/joinRoomById.wxss */
+@import "/iview/icon/index.wxss";
+
+
+.orders-top{
+  width: 648rpx;
+  /* height: 120rpx; */
+  padding:46rpx 0;
+  margin: 0 32rpx;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 2rpx solid #eee;
+}
+
+.orders-img{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  background-color: #ccc;
+}
+
+.orders-data{
+  width: 490rpx;
+  margin:10rpx 31rpx 10rpx 34rpx;
+  font-size: 26rpx;
+  font-weight: 600;
+}
+
+.orders{
+margin: 30rpx auto ;
+margin-bottom: 0rpx;
+}
+
+.orders-bottom{
+  width:710rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  background-color: #fc5e5e;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 33rpx;
+  padding: 0rpx 30rpx;
+  border-radius:0rpx 0rpx 15rpx  15rpx 
+}
+
+.orders-bottom view:last-child{
+  /* width: 380rpx; */
+  font-weight: 600;
+  text-align: center;
+}
+
+.images {
+  width: 710rpx;
+  margin: 30rpx auto;
+  display: flex;
+  justify-content: center;
+  /* position: absolute; */
+}
+
+.detail-imgs {
+  width: 100%;
+  border-radius: 15rpx;
+  overflow: hidden;
+  height: 500rpx;
+}
+
+.image-view{
+  width: 710rpx;
+  height: 500rpx;
+  position: absolute;
+
+}
+
+.content{
+  position: relative;
+  font-size: 30rpx;
+  height: 50rpx;
+  color: #fff;
+  margin-left: 30rpx;
+  margin-bottom: 50rpx;
+  bottom: -320rpx;
+}
+
+.content view:first-child{
+  /* position:; */
+  font-size: 46rpx;
+  height: 50rpx;
+}
+
+.text{
+  margin: 30rpx 20rpx;
+  padding-bottom: 30rpx;
+  border-bottom: 2rpx solid #eee;
+}
+
+.text view:first-child{
+
+  font-size: 34rpx;
+  font-weight: 600;
+}
+
+.text view:last-child{
+  text-align: justify;
+  font-size: 34rpx;
+  font-weight: 500;
+}
+
+.reading{
+  font-size: 34rpx;
+  margin: 30rpx 15rpx;
+  color: #d1beda;
+}
+
+.gotoroom{
+  width: 300rpx;
+  line-height: 60rpx;
+  margin:40rpx auto;
+  background-color: #d1beda;
+  color: #fff;
+  text-align: center;
+  border-radius: 30rpx;
+}
+
+.model-containers{
+  display: flex;
+justify-content: center;
+width: 100%;
+height: auto;
+}
+
+.comment{
+  padding-bottom: 30rpx;
+  position: absolute;
+}
+
+.radio{
+  position: relative;
+  width:70rpx;
+  height: 70rpx;
+  border-radius: 50%;
+  background-color: rosybrown;
+  right: -620rpx;
+  top: -500rpx;
+}
+
+.color{
+  background-color: #ccc !important;
+}

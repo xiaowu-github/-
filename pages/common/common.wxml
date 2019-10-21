@@ -1,0 +1,8 @@
+<template name="topModel">
+
+      <view class="topBar">
+        <text class="topBar_left" decode="{{true}}">|&nbsp;&nbsp;暖心故事</text>
+        <text class="topBar_right" decode="{{true}}">更多&nbsp;></text>
+      </view>
+
+</template>

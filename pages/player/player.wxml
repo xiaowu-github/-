@@ -1,0 +1,124 @@
+
+  <view class="read-container">
+    <view class="model-container-center">
+      <view class="read modelAll">
+        <view class="read-top">
+          <view class="read-image">
+            <image src="{{img}}"></image>
+          </view>
+          <view class="read-name">
+            <view class="read-title">{{datails.post_title}}</view>
+            <!-- <view class="author">作者：{{name}}</view> -->
+          </view>
+          <view class="player">
+            <view class='audio_progress'>
+              <!-- 播放进度 -->
+              <view class='time'>{{starttime}}</view>
+              <!-- 进度条 -->
+              <slider block-size='14' bindchange="sliderChange" block-size="12px" step="2" value="{{offset}}" max="{{max}}" selected-color="#4c9dee"></slider>
+              <!-- 音频长度 -->
+              <view class='time1'>{{duration}}</view>
+            </view>
+            <view class="audio-player">
+              <!-- 上一首 -->
+              <image class="audition-previous" src="../../img/audition-images/audition-previous-img.png" bindtap='play_shang'></image>
+              <!-- 播放 -->
+              <image id="myAudio" class="audition-play" src="../../img/audition-images/audition-player.png" bindtap="listenerButtonPlay" wx:if="{{!isOpen}}"></image>
+              <!-- 暂停 -->
+              <image src='../../img/audition-images/audition-stop.png' class='audition-play' bindtap="listenerButtonPause" wx:if="{{isOpen}}"></image>
+              <!-- 下一首 -->
+              <image class="audition-next" src="../../img/audition-images/audition-next-img.png" bindtap="play_xia"></image>
+            </view>
+          </view>
+        </view>
+        <view class="content">
+          <view class="jianjie">
+            书籍简介
+          </view>
+          <view>{{datails.post_content}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+
+<view class="model-container">
+  <view class="model-container-center">
+    <view class="comment  modelAll">
+      <view class="model-top1">
+        <text decode="true">|&nbsp;用户评论（222）</text>
+        <view>
+          <text class="more"></text>
+        </view>
+      </view>
+      <view class="comment-bottom">
+        <view class="comment-comment">
+          <view class="comment-comment-left">
+            <view>用户名称</view>
+            <view>2019/6/6 17:00</view>
+          </view>
+          <view bindtap="writeComment">写评论</view>
+        </view>
+        <view class="comments  {{isShow ? 'on' : ''}}">评论内容陪伴师简介内容陪伴师简介内容陪伴师简介内容 陪伴师简介内容陪伴师简介内容陪伴师简介内容评论内容陪伴师简介内容陪伴师简介内容陪伴师简介内容 陪伴师简介内容陪伴师简介内容陪伴师简介内容评论内容陪伴师简介内容陪伴师简介内容陪伴师简介内容 陪伴师简介内容陪伴师简介内容陪伴师简介内容
+        </view>
+        <view class="audition-open">
+          <image src="{{isShow ? '../../img/audition-images/audition-colse.png' : '../../img/audition-images/audition-open.png'}}" bindtap="toggle"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="model-container">
+  <view class="model-container-center">
+    <view class="voice  modelAll">
+      <view class="model-top1">
+        <text decode="true">|&nbsp;有声推荐</text>
+        <view>
+          <text class="more"></text>
+        </view>
+      </view>
+      <view class="voice-recom">
+        <view class="voice-content" wx:for="{{voice_data}}">
+          <image></image>
+          <view class="voice-nama">{{item.voice_nama}}</view>
+          <view class="voice-zz">{{item.voice_zz}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="bottom">
+  <view class="bottom-top">
+
+    <view bindtap="menu" data-index="{{0}}" class="forward {{select==0 ? 'beform': ''}}">目录
+    </view>
+
+    <view bindtap="forWard" data-index="{{1}}" class="forward {{select==1 ? 'beform': ''}}">转发</view>
+  </view>
+  <view class="lssue-opinion">发表评论...</view>
+</view>
+
+<!-- <view class="chapter " wx:if="{{display}}"> -->
+<view class="chapter">
+  <view style="{{position}}" class="layer" bindtap="layer"></view>
+  <view class="xxx {{transition}}">
+    <view class="chapter-top">
+      <view class="chapter-name">《重燃生命之光》</view>
+      <view class="chapter-zz">作者:xxx</view>
+    </view>
+    <view class="chapter-content">
+      <scroll-view scroll-y style="height: 400px;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+        <view class="chapter-all-chapter" wx:for="{{chapter}}" wx:for-item="Item">
+          <view class="chapter-big_chapter">{{Item.big_chapter}}</view>
+          <view class="chapter-small_chapter" wx:for="{{Item.samll_chapter}}">{{item.chapter}}</view>
+          <view class="chapter-small_chapter" wx:for="{{Item.samll_chapter}}">{{item.chapter1}}</view>
+          <view class="chapter-small_chapter" wx:for="{{Item.samll_chapter}}">{{item.chapter2}}</view>
+          <view class="chapter-small_chapter" wx:for="{{Item.samll_chapter}}">{{item.chapter3}}</view>
+          <view class="chapter-small_chapter" wx:for="{{Item.samll_chapter}}">{{item.chapter4}}</view>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+</view>

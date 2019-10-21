@@ -1,0 +1,45 @@
+<view class='images'>
+  <swiper class='detail-imgs' indicator-active-color="#d3bfdc" indicator-dots="{{true}}" autoplay='{{true}}' interval="{{3000}}" duration="{{500}}" circular="{{true}}" style="height:{{imgheights[current]}}rpx;">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item style="">
+        <image src="{{item}}" class='image-view' style="height:{{imgheights[current]}}rpx;width:100%;" bindload="imageLoad" data-src='{{item}}'></image>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<include src="/components/common/common"></include>
+<view class="model-wrapper" style="flex-direction:row;">
+  <view class="model-container model-list-li model" wx:for='{{datails}}'  data-id="{{item.term_id}}" data-index="{{index}}" bindtap="goRead" >
+    <view class="detail-imgs-box">
+      <image class="img" mode="widthFix" src="{{img[index]}}"></image>
+    </view>
+  </view>
+</view>
+
+
+<!-- <view class="model-container" wx:for='{{datails}}' data-id="{{item.term_id}}" data-index="{{index}}">
+  <view class="model-container-center">
+    <view class="orders modelAll">
+      <view class="model">
+        <block wx:if='{{index==0}}'>
+          <image class="img"></image>
+          <view class="text">
+            <view class="textcolors" style="background-color:{{colors[index]}}">{{item.name}}</view>
+            <view wx:for='{{item.second}}' wx:for-item='second' data-id="{{second.term_id}}" data-index="{{index}}" bindtap="goRead1" class="data">{{second.name}}</view>
+            <view class="Level-3" wx:for='{{item.second[1].second.third}}' data-id="{{item.term_id}}" bindtap="goToArticleList">{{item.name}}</view>
+          </view>
+        </block>
+        <block wx:else >
+          <image class="img"></image>
+          <view class="text">
+            <view class="textcolors" style="background-color:{{colors[index]}}">{{item.name}}</view>
+            <view wx:for='{{item.second}}' wx:for-item='second' data-id="{{second.term_id}}" data-index="{{index}}" bindtap="goRead" class="data">{{second.name}}
+            </view>
+            <view class="Level-3" wx:for='{{item.second[1].second.third}}' data-id="{{item.term_id}}" bindtap="goToArticleList">{{item.name}}</view>
+          </view>
+        </block>
+      </view>
+    </view>
+  </view>
+</view> -->

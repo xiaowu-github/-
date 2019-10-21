@@ -1,0 +1,269 @@
+page {
+  background-color: #e1e9f6;
+}
+.project{
+  padding: 20rpx;
+  font-size: 38rpx;
+
+}
+.introduce{
+  width: 710rpx;
+  height: 300rpx;
+  /* position: absolute */
+}
+
+.all>view:first-child{
+  margin-bottom: 20rpx;
+  font-size: 35rpx;
+  font-weight: 500;
+}
+
+.all>view:last-child{
+  margin-bottom: 20rpx;
+  /* font-size: 35rpx;
+  font-weight: 500; */
+}
+
+.introduce>view{
+  /* bottom: 200rpx;
+  position: relative;
+  margin: auto 30rpx; */
+}
+
+.introduce image{
+  width: 710rpx;
+  height: 300rpx;
+  border-radius: 15rpx;
+  position: absolute;
+}
+
+.daily {
+  background-color: #fff;
+  border-radius: 15rpx;
+  /* margin-bottom: 100rpx; */
+}
+
+.all {
+  width: 670rpx;
+  border-radius: 10rpx;
+  position: relative;
+  margin: 0 auto;
+  top: 80rpx;
+}
+
+
+.alls {
+  width: 670rpx;
+  border-radius: 10rpx;
+  /* position: relative; */
+  margin: 0 auto;
+}
+
+.scroll-text {
+  margin:0rpx 28rpx;
+}
+
+.scroll-text1 {
+  font-size: 34rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow:ellipsis;
+}
+
+.scroll-text2 {
+  margin-top: 30rpx;
+  font-size: 30rpx;
+  color: #ccc;
+    overflow: hidden;
+  white-space: pre-wrap;
+  text-overflow:ellipsis;
+    -webkit-line-clamp:3;
+    height: 130rpx;
+}
+
+.scroll-item:last-child {
+  margin-right: 0rpx !important;
+}
+
+
+.scroll-item {
+  /* width: 400rpx; */
+  /* height: 476rpx; */
+  border-radius: 10rpx;
+  display: inline-block;
+  background-color: #fff;
+  /* margin: 0rpx 20rpx 30rpx 0rpx;
+  border: 2rpx solid #eee; */
+  padding-bottom: 30rpx;
+}
+
+.scroll-item image {
+  width: 670rpx;
+  height: 510rpx;
+  border-radius: 10rpx 10rpx 0 0;
+  background-color: #ccc;
+}
+
+.scroll-item>view {
+  width: 340rpx;
+  /* height: 140rpx; */
+  border-radius: 0 0 10rpx 10rpx;
+}
+scroll-view {
+  white-space: nowrap;
+  display: flex;
+  width: 100%;
+  border-radius: 10rpx;
+}
+
+
+
+.daily>view:first-child{
+  width: 660rpx;
+  display: flex;
+  justify-content: space-between;
+    margin: 0 auto;
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
+}
+
+.follow {
+  /* width: 680rpx; */
+  font-size: 38rpx;
+} 
+
+.more{
+  font-size: 25rpx;
+}
+
+.rules{
+  width: 690rpx;
+  margin: 0 auto;
+  padding-top:20rpx; 
+  /* margin-bottom: 110rpx; */
+}
+
+.group{
+  width: 690rpx;
+  display: flex;
+  justify-content: flex-start;
+  padding: 10rpx;
+  font-size: 26rpx;
+}
+
+.group view:nth-child(2){
+  margin-left: 20rpx;
+  display: inline-block;
+
+}
+.group view:nth-child(3){
+  display: inline-block;
+}
+.rule{
+  width: 690rpx;
+  /* margin: 0 auto; */
+  border-bottom: 2rpx solid #eee;
+  padding: 20rpx;
+  text-align: justify
+}
+
+
+.yuyue{
+  width: 660rpx;
+  margin: 0 auto;
+  display: flex;
+  padding-top:20rpx; 
+  padding-bottom:20rpx; 
+  justify-content: flex-end;
+}
+
+.yuyue view{
+  width: 150rpx;
+  line-height: 50rpx;
+  border: 2rpx solid #eee;
+  background-color: #eee;
+  border-radius: 30rpx;
+  text-align: center;
+}
+
+
+.section{
+  /* margin: auto 15rpx; */
+  height: 424rpx;
+
+}
+video{
+  width: 100%;
+  height: 424rpx;
+}
+
+
+.appointment{
+  position: fixed;
+  bottom: 150rpx;
+  width: 710rpx;
+  margin: auto 20rpx;
+  border-radius: 15rpx;
+  line-height: 80rpx;
+  text-align: center;
+  font-size: 35rpx;
+  /* margin-bottom: 250rpx; */
+  background-color: #d3bfdc;
+  color: #fff;
+}
+.reading-relus{
+  position: fixed;
+  top: 0rpx;
+  height:10000rpx;
+  width: 750rpx;
+  margin: 0 auto;
+  background-color:black;
+  opacity: 0.9
+}
+.relus{
+  width: 710rpx;
+  height: 300rpx;
+  margin:0 20rpx;
+  border-radius: 15rpx;
+  position: fixed;
+  top: 150rpx;
+  background-color: #eee;
+}
+
+.relus view:first-child{
+  text-align: center;
+  font-size: 35rpx;
+  margin: 15rpx;
+}
+
+.relus view:last-child{
+  font-size: 30rpx;
+  margin: 15rpx;
+  color: rgb(148, 144, 144);
+}
+
+.choose{
+  padding-top: 30rpx;
+  width: 500rpx;
+  margin: 0 auto;
+  /* background-color: blanchedalmond; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.choose>view{
+  width: 200rpx;
+  border-radius: 15rpx;
+  border: 2rpx solid #eee;
+  color: #fff;
+  text-align: center;
+  line-height: 50rpx;
+  background-color: #ccc;
+
+}
+
+
+
+.confirm{
+ background-color: #d3bfdc;
+}

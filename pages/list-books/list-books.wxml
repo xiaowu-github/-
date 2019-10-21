@@ -1,0 +1,42 @@
+<view class="background">
+  <view class="read-container">
+    <view class="model-container-center">
+      <view class="recommendation modelAll">
+        <view class="recommendation-now">
+          <text decode="true" class="now-top">|&nbsp;本期推荐</text>
+          <view class="now-books">
+            <view class="now-books-single" wx:for='{{book}}'>
+              <image class="now-books-img"></image>
+              <view class="book_name">{{item.book_name}}</view>
+              <view class="name">{{item.name}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+
+<view class="read-container">
+  <view class="model-container-center">
+    <view class="book modelAll">
+      <view class="books">
+        <view wx:for="{{sort}}" class="nav-item {{currentTab == idx ?'active':''}}" data-current="{{idx}}" bindtap="switchNav">{{item.sort}}</view>
+        <view class="movie-recommendation">
+          <view class="movie-details" wx:for='{{movie}}'>
+            <image class="movie-details-img"></image>
+            <view class="movie-details-right">
+              <view class="movie_name">{{item.movie_name}}</view>
+              <view class="movie_Plot">{{item.movie_Plot}}</view>
+              <view class="movie_time">{{item.movie_time}}</view>
+              <view class="movie_introduction">{{item.movie_introduction}}</view>
+            </view>
+          </view>
+        </view>
+        <view class="books-more" bindtap="more">加载更多...</view>
+      </view>
+    </view>
+  </view>
+</view>

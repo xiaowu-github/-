@@ -1,0 +1,234 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"autoAudits": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.8.2",
+	"appid": "wxbbdf027ad8fb54ba",
+	"projectname": "%E5%B0%9A%E5%96%84%E7%BD%91%E7%BB%9C%E5%85%B1%E4%BA%AB",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 24,
+			"list": [
+				{
+					"id": 0,
+					"name": "暖心陪伴-预约",
+					"pathName": "pages/companys/companys",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "预约陪伴页",
+					"pathName": "pages/reservation-consultation/reservation-consultation",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "陪伴志愿者列表页",
+					"pathName": "pages/consultant/consultant",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "确认订单页",
+					"pathName": "pages/order/order",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "个人中心",
+					"pathName": "pages/personalcenter/personalcenter",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "陪伴志愿者设置时间",
+					"pathName": "pages/reception-time/reception-time",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/Trtc/webrtc-room/index/index",
+					"pathName": "pages/Trtc/webrtc-room/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "审核陪伴志愿者",
+					"pathName": "pages/audit-consultant/audit-consultant",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "个人设置",
+					"pathName": "pages/myselfset/myselfset",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "历史订单",
+					"pathName": "pages/history-orders/history-orders",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/personalcenter/personalcenter",
+					"pathName": "pages/personalcenter/personalcenter",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "分类",
+					"pathName": "pages/recommendation/recommendation",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "重燃",
+					"pathName": "pages/audition/audition",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/consultant/consultant",
+					"pathName": "pages/consultant/consultant",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/myselfset/myselfset",
+					"pathName": "pages/myselfset/myselfset",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "进入房间前页面",
+					"pathName": "pages/Trtc/webrtc-room/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 16,
+					"name": "a",
+					"pathName": "pages/Trtc/webrtc-room/a/a",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "目录页",
+					"pathName": "pages/auditions-list/auditions-list",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 18,
+					"name": "新重燃",
+					"pathName": "pages/auditions/audition",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "展播厅",
+					"pathName": "pages/show-hall/show-hall",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/show-hall/show-hall",
+					"pathName": "pages/show-hall/show-hall",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "分类",
+					"pathName": "pages/recommendation/recommendation",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/reservation-consultation/reservation-consultation",
+					"pathName": "pages/reservation-consultation/reservation-consultation",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/recruit/recruit-hall",
+					"pathName": "pages/recruit/recruit-hall",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/index",
+					"pathName": "pages/index/index",
+					"scene": null
+				}
+			]
+		}
+	}
+}

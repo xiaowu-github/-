@@ -1,0 +1,28 @@
+.list{
+  width: 710rpx;
+  margin: auto;
+}
+
+.list-title{
+  /* background-: #e4d7e9; */
+  background: linear-gradient(to right ,#d3bfdb,#fff);
+  color: #fff;
+  border-radius: 15rpx;
+  padding: 10rpx;
+  /* border-bottom: 2rpx solid #eee; */
+}
+
+.list-name{
+  /* height: 85rpx; */
+  line-height: 55rpx;
+  padding: 15rpx;
+  border-bottom: 2rpx solid #eee;
+  margin: 0rpx 15rpx;
+  font-size: 30rpx;
+  font-weight: 500;
+}
+
+.titlelist{
+  display: inline-block;
+  font-weight: 400;
+}

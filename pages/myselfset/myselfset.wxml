@@ -1,0 +1,92 @@
+<form bindsubmit='postinfo'>
+
+  <!-- <view class="backgrounds"> -->
+  <view class="read-container">
+    <view class="model-container-center">
+      <view class=" modelAll">
+        <view class="amount">
+          <view>昵称:</view>
+          <input style="color:#5c5c5c" name='nikname' value="{{info.nickname}}"></input>
+        </view>
+        <view class="section">
+          <view class="section__title">性别:</view>
+
+          <radio-group bindchange="radioChange">
+            <label class="radio" wx:for="{{items}}">
+              <radio class="radio" value="{{item.name}}" color="#d3bfdc" checked="{{item.checked}}" disabled="{{item.disabled}}" />
+              <text>{{item.value}}</text>
+            </label>
+          </radio-group>
+
+        </view>
+        <view class="adress">
+          <view>生日:</view>
+          <view class="sectiondiqu">
+            <picker style="width:100%;" mode="date" value="{{date}}" start="1940-01-01" end="2019-01-01" bindchange="bindDateChange">
+              <view class="picker">
+                {{choose1}}{{date}}
+              </view>
+            </picker>
+          </view>
+        </view>
+        <view class="adress">
+          <view>地区:</view>
+          <view class="sectiondiqu">
+            <picker style="width:100%;" mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+              <view class="picker">
+                {{choose}}{{region[0]}} {{region[1]}} {{region[2]}}
+                <!-- <view>{{info.address}}</view> -->
+              </view>
+            </picker>
+          </view>
+        </view>
+        <view class="amount">
+          <view>手机号:</view>
+          <input name='phonenumber' style="color:#5c5c5c" bindinput='expInput' value="{{info.telephone}}" maxlength="11"></input>
+        </view>
+        <view class="amount">
+          <view>验证码:</view>
+          <input style="color:#5c5c5c;width:200rpx;" name='obtain'></input>
+          <view class="{{boolean ? 'obtain':'addobtain'}}" data-telephone="{{info.telephone}}" bindtap="obtain">{{text}}{{countDownNum}}</view>
+        </view>
+        <view class="amount">
+          <view>紧急联系人:</view>
+          <input name='safe_phone' style="color:#5c5c5c" bindinput='safePhone' value="{{info.safe_phone}}"maxlength="11"></input>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- </view> -->
+
+  <view class="read-container">
+    <view class="model-container-center">
+      <view class=" modelAll">
+      <view class="text">
+        <textarea maxlength="100" name='introduction' value="{{introduction}}" bindinput='introduction'  placeholder='请用一句话填写您的简介（不超过100字）' placeholder-class="placeholder"></textarea>
+      </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="read-container">
+    <view class="model-container-center all">
+      <view class=" modelAll">
+        <view class="model-top">
+          <text decode="true">标签设置</text>
+        </view>
+        <!-- <view class="itemlabers"> -->
+        <button wx:for="{{laber}}" wx:for-item="item" wx:key="item.index" bindtap="checkboxChange" data-value="{{item.name}}" data-index="{{index}}" class="itemlaber {{item.selected ? 'btn-selected' : ''}}">
+          {{item.name}}
+        </button>
+
+        <!-- <button wx:for="{{laber}}" wx:for-item="item" wx:key="item.index" bindtap="checkboxChange" data-value="{{item.name}}" data-index="{{index}}" class="itemlaber {{item.selected ? 'btn-selected' : ''}}">
+            {{item.name}}
+          </button> -->
+        <!-- </view> -->
+
+      </view>
+    </view>
+  </view>
+
+  <button class="save" form-type="submit">保存</button>
+</form>

@@ -1,0 +1,13 @@
+<view class="model-container">
+  <view class="model-container-center">
+    <form name="liuyan" bindsubmit="formSubmit">
+      <view class="write modelAll">
+        <view class="problem">{{title}}评论</view>
+        <textarea maxlength="200" class="textarea" placeholder="请点击这里留言" value="{{value}}" bindinput="write" ></textarea>
+        <view bindtap="Submit">
+          <button type="submit"  class="{{select}}">留言</button>
+        </view>
+      </view> 
+    </form>
+  </view>
+</view>

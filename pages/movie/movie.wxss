@@ -1,0 +1,132 @@
+page {
+  background-color: #fff;
+}
+
+.images {
+  width: 710rpx;
+  margin: 30rpx auto;
+  display: flex;
+  justify-content: center;
+}
+
+.detail-imgs {
+  width: 100%;
+  border-radius: 15rpx;
+  overflow: hidden;
+  height: 400rpx;
+}
+
+.navigation-icon{
+  width: 660rpx;
+  height: 239rpx;
+  margin:40rpx auto;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2rpx solid #eeeeee;
+}
+
+.navigation-icon>view{
+  width:159rpx;
+  height: 209rpx;                
+}
+.navigation-icon>view image{
+  width:159rpx;
+  height: 159rpx;                
+}
+
+.navigation-icon>view view{
+  font-size: 28rpx;
+  color: #000;   
+  text-align: center         
+}
+
+.gooodsp{
+  width: 710rpx;
+  height: 386rpx;
+  margin: auto;
+  border-bottom: 2rpx solid #eee;
+}
+
+.gooodsp-datails{
+  width: 195rpx;
+  height: 290rpx;
+}
+
+.gooodsp-datails image{
+  width: 195rpx;
+  height: 250rpx;
+  border-radius: 15rpx;
+}
+
+.gooodsp-datails >view{
+  font-size: 24rpx;
+  color: #000;
+  text-align: center;
+  font-weight: 500;
+}
+
+.all-datails{
+  width: 710rpx;
+  height: 287rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.some-great{
+  width: 710rpx;
+  height: 55rpx;
+  font-size: 30rpx;
+  font-weight: 600;
+}
+
+movie-store{
+  width: 710rpx;
+  height: 356rpx;
+}
+
+
+.movie-stores{
+  line-height: 95rpx;
+  font-size: 30rpx;
+  font-weight: 600;
+}
+
+.movie-store-datails{
+  width: 710rpx;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 30rpx;
+  border-bottom: 2rpx solid #eee;
+  padding-bottom: 30rpx;
+}
+
+.movie-store-datails>image{
+  width: 195rpx;
+  height: 254rpx;
+  background-color: #ccc;
+  border-radius: 15rpx;
+}
+.datails{
+  margin-left: 37rpx;
+  width: 460rpx;
+}
+
+.datails view:nth-child(1){
+  padding-bottom: 33rpx;
+  font-size: 28rpx;
+  font-weight: 600;
+}
+
+.datails view:nth-child(2){
+  color: #6d6d6d;
+  font-size: 24rpx;
+}
+.datails view:nth-child(3){
+  padding-bottom: 28rpx;
+  font-size: 24rpx;
+  color: #6d6d6d;
+}
+.datails view:nth-child(4){
+  font-size: 24rpx;
+  color: #6d6d6d;
+}

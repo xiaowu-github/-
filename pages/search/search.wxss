@@ -1,0 +1,45 @@
+.search-block {
+    padding: 17rpx 24rpx;
+    display: block;
+}
+
+.search-block navigator {
+    display: block;
+    background: #fff;
+    text-align: center;
+    height: 68rpx;
+    line-height: 62rpx;
+    border-radius: 10rpx;
+    color: #b2b2b2;
+}
+
+.search-block navigator image {
+    height: 24rpx;
+    width: 24rpx;
+}
+
+.searchContent {
+  width: 710rpx;
+  height: 90rpx;
+  margin: 30rpx auto;
+  border-radius: 15rpx;
+  display: flex;
+  justify-content: center;
+  color: #dadada;
+  background-color: #fff;
+}
+
+.seachText {
+  width: 604rpx;
+  text-align: center;
+  line-height: 90rpx;
+  height: 90rpx;
+  position: relative ;
+}
+
+.searchIcon {
+  display: flex;
+  width: 106rpx;
+  justify-content: center;
+  align-items: center;
+}

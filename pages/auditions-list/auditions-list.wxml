@@ -1,0 +1,28 @@
+<view class='images'>
+  <view class='top-img'>
+    <!-- <image src="../img/"></image> -->
+    <view class="all">
+      <view class="stories">
+        <view>{{firstName}}</view><view>{{titList[index-1]}}</view>
+      </view>
+    </view>
+
+  </view>
+</view>
+
+<view class="model-container">
+  <view class="model-container-center">
+    <view class="orders modelAll order-box">
+      <view class="list">
+        <!-- <view class="list-title">同名人生路</view> -->
+          <view class="list-name second-list" wx:for='{{list}}' data-id="{{item.term_id}}"data-title="{{item.name}}" bindtap="goTo">{{item.name}}
+          <button class="clickGoIn" wx:if="{{!item.second.third}}">点击进入</button>
+          <view class="list-name third-list" wx:for='{{item.second.third}}' data-id="{{item.term_id}}" data-title="{{item.name}}"  bindtap="goTo">
+          {{item.name}}
+           <button class="clickGoIn">点击进入</button>
+          </view>
+          </view>
+      </view>
+    </view>
+  </view>
+</view>

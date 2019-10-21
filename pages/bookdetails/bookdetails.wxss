@@ -1,0 +1,394 @@
+.pgcolor {
+  background-color: #000 !important;
+  color: #fff;
+}
+
+.bookdetails-content{
+  width: 710rpx;
+  height: auto;
+  padding-bottom: 30rpx;
+  border-radius: 15rpx;
+}
+
+.bookdetails-switch{
+  width: 710rpx;
+  height: 50rpx;
+  display: flex;
+  justify-content: space-between;
+  color: #d3bfdc;
+  margin-top: 15rpx;
+  padding-top: 15rpx;
+  border-radius: 15rpx;
+
+}
+
+.bookdetails-img{
+  width: 30rpx;
+  height: 20rpx;
+}
+.bookdetails-text{
+  margin: 20rpx;
+  font-weight: 600;
+  text-align: justify;
+}
+
+
+
+.bookdetails-qianyan{
+  margin-bottom: 30rpx;
+}
+
+.bookdetails-chapter{
+  width: 650rpx;
+  height: 65rpx;
+  border-radius: 10rpx;
+  text-align: center;
+  line-height: 65rpx;
+  margin:0rpx auto ;
+  background-color: #d3bfdc;
+  color: #fff;
+}
+
+.bookdetails-btn{
+  display: flex;
+  justify-content: space-between;
+
+}
+.bookdetails-btn-one{
+  width: 319rpx;
+  display: flex;
+  justify-content: space-between
+}
+
+.bookdetails-catalog{
+  width: 142rpx;
+  height: 56rpx;
+  line-height: 56rpx;
+  border-radius: 15rpx;
+  border: 2rpx solid #d3bfdc;
+  color: #d3bfdc;
+  text-align: center;
+  margin-left: 25rpx;
+}
+
+.bookdetails-btn-two{
+  width: 225rpx;
+  height: 55rpx;
+  line-height: 55rpx;
+  border-radius: 15rpx;
+  border: 2rpx solid #d3bfdc;
+  color: #d3bfdc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 36rpx;
+  margin: 25rpx;
+}
+
+.bookdetails-btn-click{
+  text-align: center;
+}
+
+.bookdetails-btn-two image{
+  width: 38rpx;
+  height: 37rpx;
+  margin: auto 10rpx;
+}
+
+.chapter {
+  width: 100%;
+  margin-bottom: 100rpx;
+  position: fixed;
+  bottom: 0rpx;
+}
+
+.layer {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 108%;
+  background: rgba(0, 0, 0, 0.5);
+  overflow: hidden; 
+  z-index: 1;
+}
+
+.sets {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 108%;
+  background: rgba(0, 0, 0, 0.5);
+  overflow: hidden; 
+  z-index: 1;
+}
+
+.anima {
+  position: relative;
+  width: 100%;
+  height: 0rpx;
+  transition: all 1s ease-in-out;
+  background-color: #fff;
+  z-index: 100;
+}
+
+.anima2 {
+  position: relative;
+  width: 100%;
+  height: 0rpx;
+  transition: all 1s ease-in-out;
+  background-color: #fff;
+  z-index: 100;
+}
+
+.chapters {
+  height: 900rpx !important;
+}
+
+.change{
+  height: 300rpx !important;
+}
+
+.chapter-top {
+  margin: 0 30rpx;
+  padding: 30rpx 0;
+  border-bottom: 2rpx solid#eee;
+}
+
+.chapter-name {
+  font-size: 28rpx;
+  font-weight: 600;
+}
+
+.chapter-zz {
+  font-size: 26rpx;
+  color: #6c6c6c;
+}
+
+.chapter-content {
+  margin: 0 30rpx;
+}
+
+.chapter-small_chapter {
+  padding: 30rpx 30rpx 30rpx 90rpx;
+  border-bottom: 2rpx solid#eee;
+  font-size: 28rpx;
+  font-weight: 600;
+}
+
+.chapter-big_chapter {
+  padding: 29rpx 0;
+  border-bottom: 2rpx solid#eee;
+  font-size: 28rpx;
+  font-weight: 600;
+}
+
+
+.bottom {
+  width: 750rpx;
+  height: 100rpx;
+  display: flex;
+  position: fixed;
+  bottom: 0rpx;
+  justify-content: space-between;
+  background-color: #fff;
+  z-index: 1000;
+  align-items: center;
+  /* margin: auto 25rpx; */
+}
+
+.bottom-top {
+  width: 318rpx;
+  height: 56rpx;
+  margin: 25rpx;
+  display: flex;
+  line-height: 56rpx;
+  justify-content: space-between;
+}
+
+.forward {
+  display: inline-block;
+  width: 141rpx;
+  height: 55rpx;
+  font-size: 36rpx;
+  text-align: center;
+  line-height: 55rpx;
+  border: 2rpx solid #d3bfdc;
+  background-color: #fff;
+  color: #d3bfdc;
+  border-radius: 15rpx;
+  margin-left: 25rpx;
+}
+
+.beform {
+  border: 2rpx solid #d3bfdc;
+  background-color: #d3bfdc;
+  color: #fff;
+}
+
+.lssue-opinion {
+  width: 357rpx;
+  height: 55rpx;
+  line-height: 55rpx;
+  text-align: center;
+  color: #ccc;
+  background-color: #f2f2f2;
+  font-size: 30rpx;
+  margin: 25rpx;
+  border-radius: 15rpx;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  margin-bottom: 100rpx;
+}
+
+.set{
+  /* margin-bottom: 100rpx; */
+  position: fixed;
+  bottom: 0rpx;
+}
+.set-font{
+  /* width: 640rpx; */
+  /* height: 192rpx; */
+  padding: 58rpx 55rpx 35rpx 55rpx;
+  /* display: flex;
+  justify-content: space-between; */
+
+}
+
+.body-view{
+  width: 444rpx;
+  height: 5rpx;
+  position: relative;
+}
+
+slider{
+margin: 0rpx !important; 
+/* position: relative; */
+}
+
+.boder{
+  width: 544rpx;
+  height: 4rpxl;
+  background-color: #eee;
+}
+
+
+.all-shuxian{
+  width: 444rpx;
+  /* display: flex;
+  justify-content: space-between;
+  position: absolute; */
+  margin-top: -25rpx;
+  margin-left: 50rpx
+}
+
+.shuxian{
+  height: 18rpx;
+  width: 4rpx;
+  background-color: #EEE;
+  float: left;
+  margin-right: 10.1%;
+}
+
+.a{
+  width:10%;
+  height:10px;
+  background:red;
+  border-left:1px solid #d3bfdc;
+  float: left
+}
+
+.bookdetails-contents{
+   font-size: 33rpx;
+   font-weight: 500;
+}
+.set-one{
+width: 640rpx;
+height:30rpx;
+display: flex;
+justify-content: space-between;
+}
+
+.set-color{
+  margin: 50rpx 56rpx;
+  width: 550rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.set-color>view:first-child{
+width: 262rpx;
+height: 45rpx;
+border: 2rpx solid #d3bfdc;
+color: #6c6c6c;
+border-radius: 30rpx;
+text-align: center;
+font-size: 24rpx;
+line-height: 45rpx;
+background-color: #fff;
+}
+
+.set-color>view:last-child{
+width: 262rpx;
+height: 45rpx;
+line-height: 45rpx;
+border: 2rpx solid #6c6c6c;
+color: #ffffff;
+border-radius: 30rpx;
+text-align: center;
+background-color: #6c6c6c;
+font-size: 24rpx;
+
+}
+
+.set-text{
+  color: #6c6c6c;
+  text-align: center;
+  font-size: 24rpx;
+}
+
+.bookdetails{
+  margin-bottom: 30rpx;
+  border-radius: 15rpx;
+}
+
+
+
+.list{
+  width: 710rpx;
+  margin: auto;
+}
+
+.list-title{
+  /* background-: #e4d7e9; */
+  background: linear-gradient(to right ,#d3bfdb,#fff);
+  color: #fff;
+  border-radius: 15rpx;
+  padding: 10rpx;
+  /* border-bottom: 2rpx solid #eee; */
+}
+
+.list-name{
+  /* height: 85rpx; */
+  line-height: 55rpx;
+  padding: 15rpx;
+  border-bottom: 2rpx solid #eee;
+  margin: 0rpx 15rpx;
+  font-size: 30rpx;
+  font-weight: 500;
+}
+
+.titlelist{
+  display: inline-block;
+  font-weight: 400;
+}
+.scroll-box{
+  height: 800rpx;
+  padding-bottom: 40rpx;
+}

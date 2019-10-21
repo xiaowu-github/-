@@ -1,0 +1,143 @@
+<form bindsubmit="formSubmit">
+<view class="">
+  <view class="read-container">
+    <view class="model-container-center">
+      <view class="reservation modelAll">
+        <view class="consultation">
+          <view class="consultation-data">
+            <image src="{{info.piture}}"></image>
+            <view class="datalis">
+              <view>
+                <view>陪伴志愿者:{{info.name}}</view>
+                <view>年龄:{{info.age}}</view>
+                <view class="star2">
+                  <image src="../../img/reservation-consultation/css_sprites-{{info.score}}.png" style='background-image:no-repeat top; width:220rpx;height:50rpx;background-size: 30rpx' data-index="{{index}}" bindtap='score'></image>
+                </view>
+              </view>
+              <!-- 标签 --> 
+                  <view class="label" >
+                    <view wx:for='{{info.tag}}'>{{item.name}}</view>
+                  </view>
+            </view>
+          </view>
+          <view class="introduce">
+            <view>尚善高级培训师</view>
+            <view>{{info.introduction}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+<view class="days">
+  <scroll-view scroll-x="true">
+    <view class="day {{select ==  index ? 'add' : ''}} " wx:for="{{json_data}}" data-index="{{index}}" data-conten="{{item.days}}" data-year="{{item.y}}" data-month="{{item.m}}" data-date="{{item.d}}" data-day="{{item.w}}" bindtap="choice">
+      <view>{{item.m}}月{{item.d}}日</view>
+      <view  wx:if="{{item.w == 0}}">星期日</view>
+      <view  wx:if="{{item.w == 1}}">星期一</view>
+      <view  wx:if="{{item.w == 2}}">星期二</view>
+      <view  wx:if="{{item.w == 3}}">星期三</view>
+      <view  wx:if="{{item.w == 4}}">星期四</view>
+      <view  wx:if="{{item.w == 5}}">星期五</view>
+      <view  wx:if="{{item.w == 6}}">星期六</view>  
+    </view>
+  </scroll-view>
+</view>
+
+
+  <view class="model-container">
+    <view class="model-container-center">
+      <view class="reservation modelAll">
+        <view class="model-top">
+          <text decode="true">|&nbsp;选择时间</text>
+          <!-- <view>
+          <text class="more" decode="true">更多&nbsp;></text>
+        </view> -->
+        </view> 
+        <view class="time">
+          <block wx:for="{{json_data[select].h}}">
+          <!-- 可选择 -->
+            <view wx:if="{{item.boolean}}" class="hour {{select2 ==  index ? 'houradd' : ''}}" data-index="{{index}}" data-hour="{{item.h}}" bindtap="choiceHour">{{item.h}}
+            </view>
+            <!-- 不可选择 -->
+            <view wx:else="{{item.boolean}}" class="hour_dis" data-index="{{index}}" data-hour="{{item.hour}}">{{item.h}}
+            </view> 
+          </block>
+        </view>
+
+        <view class="button">
+          <button form-type="submit" class="btn"  data-id="{{info.id}}" >点击预约陪伴</button>
+          <view class="prompt">友情提示：单次陪伴时长不超过90分钟</view>
+        </view>
+
+        <view class="bottom">
+          <view>客服电话000-000-0000</view>
+          <view>接待时间：09:00-21:00 周一至周日</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</form>
+
+
+<view class="model-container">
+  <view class="model-container-center">
+    <view class="comment modelAll">
+      <view class="comment-top">
+        <text decode="{{true}}">|&nbsp;&nbsp;用户评论（223）</text>
+      </view>
+      <view class="comment-content">
+        <view class="comment-content-top">
+          <view class="comment-name">用户名称</view>
+          <text class="comment-time" decode="{{true}}">2019/8/8&nbsp;&nbsp;17:15</text>
+        </view>
+        <view class="user-name">
+          <text decode="true">陪伴志愿者:赵钱孙&nbsp;&nbsp;&nbsp;&nbsp;陪伴时长:30分钟</text>
+          <view class="star">
+            <view wx:for="{{stars}}" style='background:url("../../img/reservation-consultation/star.png")  no-repeat top; width:30rpx;height:30rpx;background-size: 30rpx' data-index="{{index}}" bindtap='score'></view>
+          </view>
+        </view>
+        <view>
+          评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容 评论内容评论内容评论内容评论内容评论内容评论内容
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+<block wx:if="{{show}}">
+  <view class="barrier" bindtap="barrier"></view>
+  <image class='images' src="../../img/article-list/images/susee_03.png"></image>
+  <view class="appointment-success">
+    <view class="appointment-top">
+      <view>恭喜您! 预约成功!</view>
+      <view>07月08日/星期三/10:30</view>
+    </view>
+    <view class="appointment-data">
+      <view class="appointment-datalis">
+        <view>预约单号:</view>
+        <view>8841876746457682</view>
+      </view>
+      <view class="appointment-datalis">
+        <view>预约事件:</view>
+        <view>2019-7-08   10:30</view>
+      </view>
+      <view class="appointment-datalis">
+        <view>预约陪伴志愿者:</view>
+        <view>赵钱孙</view>
+      </view>
+      <view class="appointment-datalis">
+        <view>预约时长:</view>
+        <view>45分钟</view>
+      </view>
+    </view>
+    <view class="appointment-bottom">
+      <view>温馨提示:注意事项，重点提醒等!</view>
+      <view>预约订单请在个人中心查看</view>
+    </view>
+  </view>
+
+</block>

@@ -1,0 +1,6 @@
+  <view class="search">
+    <view class="searchContent">
+      <input class="seachText" type="text" focus='{{boolean}}' confirm-type="search" placeholder="文章搜索" value="{{value}}" bindinput='expInput' bindconfirm='query'></input>
+      <icon class="searchIcon" size='28' type='search'></icon>
+    </view>
+  </view>

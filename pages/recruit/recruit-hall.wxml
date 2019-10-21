@@ -1,0 +1,73 @@
+<view class='images'>
+  <swiper class='detail-imgs' indicator-active-color="#d3bfdc" indicator-dots="{{true}}" autoplay='{{true}}' interval="{{3000}}" duration="{{500}}" circular="{{true}}" style="height:{{imgheights[current]}}rpx;">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item style="">
+      <!-- mode="widthFix"等比例缩放 -->
+        <image mode="widthFix" src="{{picurl}}{{item.pic_url}}" class='image-view' style="height:{{imgheights[current]}}rpx;width:100%;" bindload="imageLoad" data-src='{{item}}'></image>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<include src="/components/common/common"></include>
+
+<view class="model-container" wx:for='{{data}}'>
+  <view class="model-container-center color">
+    <view class="orders modelAll liner-box">
+      <view class="play">
+        <view wx:for='{{tabTit}}' data-termId="{{item.termId}}" class="{{selecet == index ?  'selected' : ''}}"  bindtap="onClick" data-index="{{index}}">{{item.name}}</view>
+      </view>
+      <view class="datails contribute-box" wx:if='{{selecet == 0 ? true:false}}'>
+        <view class="contribute-list" data-id="{{item.ID}}" bindtap='goToDetail' wx:for="{{tabList1}}">
+          <!-- <image class="img" widthFix src="../../img/in_room.jpg"></image> -->
+           <h3 class="tit">{{item.post_title}}</h3>
+           <text class="con">{{item.post_content}}</text>
+        </view>
+        <view class="email-box">
+          <h3 class="tit">稿件发送地址</h3>
+          <view class="email-qr">
+            <view class="email-box-wrapper">
+              <span class="txt">
+               邮箱：
+              </span>
+              <span class="txt">
+               微信：
+              </span>
+            </view>
+            <image class="qr" src="../../img/in_room.jpg"></image>
+          </view>
+        </view>
+        <!-- <view wx:for="{{tab1}}" >
+          <view style="width:50%;float:left">
+            <view style="padding:10rpx;">
+              <view class="ones" data-id="{{item.term_id}}" data-name="{{item.name}}" bindtap="goShowList">
+                {{item.name}}
+              </view>
+            </view>
+          </view>
+        </view> -->
+      </view>
+      <view class="allblock" wx:else>
+        <view bindtap='goToDetail' data-id="{{item.ID}}" wx:for="{{tabList2}}" class="list-detail">
+          <h3>{{item.post_title}}</h3>
+          <p class="con-box">{{item.post_content}}</p>
+        </view>
+         <view class="email-box">
+          <h3 class="tit">稿件发送地址</h3>
+          <view class="email-qr">
+            <view class="email-box-wrapper">
+              <span class="txt">
+               邮箱：
+              </span>
+              <span class="txt">
+               微信：
+              </span>
+            </view>
+            <image class="qr" src="../../img/in_room.jpg"></image>
+          </view>
+        </view>
+        <!-- <view class="block" wx:for="{{tab2}}" bindtap="goShowList"  data-id="{{item.term_id}}" data-name="{{item.name}}" >{{item.name}}</view> -->
+      </view>
+    </view>
+  </view>
+</view>

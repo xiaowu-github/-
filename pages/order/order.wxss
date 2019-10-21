@@ -1,0 +1,282 @@
+.confirm-order{
+  width: 710rpx;
+  padding:30rpx 0rpx; 
+}
+
+.confirm-order>view:first-child{
+  width: 710rpx;
+  margin: 0 30rpx;
+  font-size: 36rpx;
+  font-weight: 600;
+  
+}
+
+.confirm-order>view:last-child{
+  width: 710rpx;
+  margin: 0 auto;
+  padding-top: 15rpx;
+    margin: 0 30rpx;
+}
+.orders{
+  width: 710rpx;
+}
+.order{
+  width: 680rpx;
+  display: flex;
+  justify-content:flex-start;
+
+}
+
+.order>image{
+  width: 172rpx;
+  height: 172rpx;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin: 30rpx;
+}
+
+.order>view{
+  margin: 30rpx;
+  font-size: 35rpx;
+}
+
+
+.lists-top{
+  width: 655rpx;
+  /* height: 30rpx; */
+  display: flex;
+  justify-content: space-between;
+}
+.lists-top>image{
+  width: 172rpx;
+  height: 172rpx;
+  background-color: #ccc;
+  border-radius: 50%;
+  border: 2rpx solid #eee;
+}
+
+.label{
+  margin: 17rpx 0rpx;
+  display: flex;
+  justify-content: flex-start;
+}
+.label>view{
+  width: 107rpx;
+  height: 26rpx;
+  line-height: 26rpx;
+  margin-right: 10rpx;
+  background-color: #d4e9fd;
+  color: #d3bfdc;
+  font-size: 20rpx;
+  border-radius: 15rpx;
+  text-align: center;
+}
+
+.lists-content{
+  font-size: 25rpx;
+  color: #707070;
+  line-height: 30rpx;
+}
+
+.lists-bottom{
+  width: 640rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.lists-mean{
+  font-size: 25rpx;
+  margin-left: 10rpx;
+}
+
+.lists-mean>view:first-child{
+  color: #595959;
+}
+
+.lists-mean>view:last-child{
+  color: #d3bfdc;
+}
+
+.ordre-time{
+  width: 640rpx;
+  margin: 0 auto;
+  padding: 30rpx 0rpx;
+  font-size: 28rpx;
+}
+
+.button{
+  width: 673rpx;
+  height: 125rpx;
+  border-bottom:2rpx solid #eee;
+  margin: 0 auto;
+}
+.buttons{
+  width: 673rpx;
+  margin: 50rpx auto;
+}
+
+button{
+  width: 258rpx;
+  height: 53rpx;
+  line-height: 53rpx;
+  color: #FFF;
+  font-size: 33rpx;
+  text-align: center;
+  background-color: #d3bfdc;
+  border-radius: 30rpx;
+}
+
+.barrier{
+  opacity: .5;
+  background-color: #000;
+  width: 100%;
+  height: 1500rpx;
+  position: fixed;
+  top: 0rpx;
+}
+
+.appointment-success{
+  width: 90%;
+  /* height: 615rpx; */
+  position: fixed;
+  top: 150rpx;
+  left: 5%;
+  border-radius: 15rpx;
+  background-color: #fff;
+  margin: auto
+}
+
+.appointment-top{
+  width: 502rpx;
+  height: 50rpx;
+  margin: 50rpx auto;
+  z-index: 100;
+}
+
+.appointment-top view:first-child{
+  font-size: 52rpx;
+  text-align: center;
+  color: #685b69;
+}
+
+.appointment-top view:last-child{
+  font-size:  40rpx;
+  text-align: center;
+  color: #685b69;
+  font-weight: bold
+}
+
+.images{
+    width: 650rpx;
+  height: 915rpx;
+    position: fixed;
+  top: 50rpx;
+  left: 7%;
+}
+
+.appointment-data{
+  /* width: 600rpx;
+  height: 200rpx; */
+   width: 600rpx;
+  padding: 30rpx 0rpx;
+  border: 2rpx dashed  #685b69 ;
+  margin: auto
+}
+
+.appointment-datalis{
+  width: 545rpx;
+  height: 45rpx;
+  line-height: 45rpx;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-bottom: 60rpx;
+}
+
+.appointment-datalis view:first-child{
+  color: #685b69;
+  font-size: 30rpx;
+}
+
+.appointment-datalis view:last-child{
+  color: #685b69;
+  font-size: 30rpx;
+}
+
+.appointment-bottom{
+  width: 593rpx;
+  height: 163rpx;
+  margin: 0 auto;
+ border-top: 2rpx solid #eee; 
+ padding: 20rpx 0rpx;
+}
+
+
+.appointment-bottom view{
+  color: #f08e2d;
+  font-size: 25rpx;
+  text-align: center;
+  line-height: 40rpx;
+}
+
+.btn{
+  margin: 0 auto;
+  width: 210rpx;
+  line-height: 50rpx;
+  text-align: center;
+  color: #fff;
+  border: 2rpx solid #fff;
+  border-radius: 15rpx;
+  background-color: #685b69;
+  padding: 10rpx;
+}
+
+.lists{
+  width: 100%;
+  padding: 30rpx;
+  border-bottom: 2rpx solid #eee;
+  display: flex;
+  /* align-items: center; */
+}
+
+.lists>image{
+  width: 140rpx;
+  height: 140rpx;
+  background-color: #ccc;
+  border-radius: 50%;
+  border: 2rpx solid #eee;
+}
+
+.lists-data{
+  margin-left: 30rpx;
+  width: 460rpx;
+}
+.lists-data>view:nth-child(1){
+  margin-top: 10rpx;
+  font-size: 32rpx;
+  font-weight: 500;
+}
+.lists-data>view{
+  margin-top: 10rpx;
+  font-size: 28rpx;
+  text-align: justify;
+}
+
+.tag_name{
+width: 100%;
+display: flex;
+  justify-content: flex-start;
+  font-size: 22rpx;
+  /* 自动换行 */
+  flex-wrap:wrap;
+}
+.tag_name>view{
+  width: auto;
+  padding:0rpx 10rpx;
+  margin-right: 20rpx;
+  background-color: #f4c49a;
+  border-radius: 15rpx;
+  color:#fff;
+  margin-top: 10rpx;
+  font-size: 24rpx
+}

@@ -1,0 +1,35 @@
+<view class="background">
+  <view class="read-container">
+    <view class="model-container-center">
+      <view class="tabbar">
+        <view class="tabbar-item" wx:for="{{tab_content}}">
+          <view class="tabbar-items  {{selecter ==  index ? 'add' : ''}}" data-index="{{index}}" bindtap="tabbar">{{item.title}}</view>
+        </view>
+      </view>
+      <!-- 全部订单 -->
+        <view class="orders modelAll" wx:for="{{order_datalis}}">
+          <view class="orders-all">
+            <view class="orders-top">
+              <image class="orders-img" src="{{item.piture}}"></image>
+              <view class="orders-data">
+                <view>陪伴志愿者：{{item.name}}</view>
+                <block>
+                  <view>预约时间：{{item.consultant_time}}</view>
+                </block>
+                <view>服务时长：90分钟</view>
+              </view>
+            </view>
+            <view class="orders-bottom">
+              <view class="order-time">
+                <view>单号：{{item.order_on}}</view>
+              </view>
+              <!-- 取消按钮 -->
+              <view class="order-state color" bindtap="canCel" data-order_id="{{item.id}}" wx-if='{{item.status==2}}'>重新进入房间</view>
+              
+              <view class="order-state" wx-if='{{item.status==1}}'>开始陪伴</view>
+            </view>
+          </view>
+        </view>
+    </view>
+  </view>
+</view>

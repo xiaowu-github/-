@@ -1,0 +1,145 @@
+<view class="background">
+  <view class="read-container">
+    <view class="model-container-center">
+      <view class="reading modelAll">
+        <include src="/components/common/common"></include>
+
+        <view class="reading-recommendation">
+          <view class="reading-content">
+            <image class="reading-img"></image>
+            <view class="reading-text">
+              <view>重燃生命之光》国内首款 失独父母精神慰藉阅听组合 产品</view>
+              <view>共计22万字，汇编了29个真实的失独故事识，探究生命追寻中的启迪、失独相关政策资料...</view>
+            </view>
+          </view>
+          <view class="btn">本期阅读推荐</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="read-container">
+  <view class="model-container-center">
+    <view class="amount modelAll">
+      <view class="amountall">
+        <view class="amount-order">
+          <image class="images" src="../../img/recommendation-images/recommendation-backgournd_01.png"></image>
+          <view>历史订单</view>
+        </view>
+        <view class="amount-appointment" bindtap="appointment">
+          <image class="images" src="../../img/recommendation-images/recommendation-backgournd_02.png"></image>
+          <view>预约设置</view>
+        </view>
+        <view class="amount-set">
+          <image class="images" src="../../img/recommendation-images/recommendation-backgournd_03.png"></image>
+          <view>个人设置</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="model-container">
+  <view class="model-container-center">
+    <view class="article modelAll">
+      <view class="article-top">
+        <text decode="true">|&nbsp;暖心文章</text>
+        <text class="more" decode="true">更多&nbsp;></text>
+      </view>
+      <view class="article-link">
+        <image class="article-img"></image>
+        <view class="article-bottom">
+          <view class="article-bottom-left">2019-05-22</view>
+          <view class="article-bottom-right">
+            <view class="article-bottom-right-one">
+              <button id="sBtn" open-type="share" type="primary">
+              <image src="../../img/index-images/foundation-index-searchicon.png"></image>
+              <view class="story-forward">转发</view>
+            </button>
+            </view>
+            <view class="article-bottom-right-two">
+              <image src="../../img/index-images/foundation-index-zan.png"></image>
+              <view class="story-forward">8</view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="article-essay">
+        <view class="article-title">文章标题文章标题文章标题文章标题文章标题文章标题</view>
+        <view class="article-essay-img">
+          <view>
+            <image></image>
+          </view>
+          <view>
+            <image></image>
+          </view>
+          <view>
+            <image></image>
+          </view>
+        </view>
+        <view class="article-essay-bottom">
+          <view class="article-bottom-left">2019-05-22</view>
+          <view class="article-bottom-right">
+            <view class="article-bottom-right-one">
+              <button id="sBtn" open-type="share" type="primary">
+              <image src="../../img/index-images/foundation-index-searchicon.png"></image>
+              <view class="story-forward">转发</view>
+            </button>
+            </view>
+            <view class="article-bottom-right-two">
+              <image src="../../img/index-images/foundation-index-zan.png"></image>
+              <view class="story-forward">8</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="model-container">
+  <view class="model-container-center">
+    <view class="book modelAll">
+      <view class="model-top">
+        <text decode="true">|&nbsp;图书推荐</text>
+        <view bindtap="more">
+          <text class="more" decode="true">更多&nbsp;></text>
+        </view>
+      </view>
+      <view class="book-recommendation">
+        <view wx:for='{{book}}' class="book-single">
+          <image></image>
+          <view class="book-name">{{item.book_name}}</view>
+          <view class="name">{{item.name}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+
+<view class="model-container">
+  <view class="model-container-center">
+    <view class="movie modelAll">
+      <view class="model-top">
+        <text decode="true">|&nbsp;电影推荐</text>
+        <view>
+          <text class="more" decode="true">更多&nbsp;></text>
+        </view>
+      </view>
+      <view class="movie-recommendation">
+        <view class="movie-details" wx:for='{{movie}}'>
+          <image class="movie-details-img"></image>
+          <view class="movie-details-right">
+            <view class="movie_name">{{item.movie_name}}</view>
+            <view class="movie_Plot">{{item.movie_Plot}}</view>
+            <view class="movie_time">{{item.movie_time}}</view>
+            <view class="movie_introduction">{{item.movie_introduction}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,139 @@
+page {
+  background-color: #e5edfa;
+}
+
+.background {
+  width: 750rpx;
+  height: 160rpx;
+  /* background-color: #d3bfdc; */
+  margin-bottom: 75rpx;
+}
+
+.orders {
+  margin: 30rpx auto;
+}
+
+.orders-all {
+  width: 710rpx;
+  height: 320rpx;
+}
+
+.orders-top {
+  width: 648rpx;
+  /* height: 120rpx; */
+  padding: 46rpx 0;
+  margin: 0 32rpx;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 2rpx solid #eee;
+}
+
+.orders-img {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  background-color: #ccc;
+}
+
+.orders-data {
+  width: 490rpx;
+  margin: 10rpx 31rpx 10rpx 34rpx;
+  font-size: 26rpx;
+  font-weight: 600;
+}
+
+.orders-bottom {
+  width: 650rpx;
+  /* height: 80rpx; */
+  margin: 17rpx 31rpx;
+  color: #d3bfdc;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 24rpx;
+}
+
+/* .model-container-center >view:last-child {
+  margin-bottom: 0;
+} */
+
+.order-state {
+  width: 140rpx;
+  height: 40rpx;
+  background-color: #ccc;
+  color: #fff;
+  font-size: 20rpx;
+  text-align: center;
+  line-height: 40rpx;
+  border-radius: 30rpx;
+  font-weight: 500;
+}
+
+.order-state2 {
+  width: 140rpx;
+  height: 40rpx;
+  background-color: #d3bfdc;
+  color: #fff;
+  font-size: 20rpx;
+  text-align: center;
+  line-height: 40rpx;
+  border-radius: 30rpx;
+  font-weight: 500;
+}
+
+.evaluate {
+  width: 100rpx;
+  height: 38rpx;
+  color: #d3bfdc;
+  border: 2rpx solid #d3bfdc;
+  border-radius: 30rpx;
+  font-size: 20rpx;
+  font-weight: 500;
+  text-align: center;
+  line-height: 38rpx;
+}
+
+.order-notstar {
+  width: 250rpx;
+  height: 40rpx;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.tabbar {
+  width: 100%;
+  height: 70rpx;
+  background-color: #fff;
+  border-radius: 15rpx;
+}
+
+.tabbar-item {
+  width: 20%;
+  float: left;
+}
+
+.tabbar-items {
+  width: 70%;
+  text-align: center;
+  line-height: 70rpx;
+  margin: 0 auto;
+}
+
+.add {
+  border-bottom: 2rpx solid #d3bfdc;
+  color: #d3bfdc;
+}
+
+.color{
+  background-color: #d3bfdc !important
+}
+
+.comments{
+  width: 15rpx;
+  height: 15rpx;
+  background-color: red;
+  border-radius: 50%;
+  position: relative;
+  top: -60rpx;
+  right: -118rpx;
+}

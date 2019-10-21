@@ -1,0 +1,106 @@
+<import src="/components/common/index"></import>
+<view class="stop">
+  <view class="bgpic" animation="{{animation}}"></view>
+</view>
+
+<view class="page {{__page_classes}}">
+
+  <include src="/components/common/common"></include>
+
+
+
+<!-- 头部 -->
+  <view wx:if="{{show}}">
+  <view  class="headnavabr">
+    <image src="../../img/icon.png"></image>
+    <view>暖心行动</view>
+  </view>
+  </view>
+
+    <view wx:if="{{show1}}" style=" position: fixed; background-color: #d3bfdc; z-index:100;width:100%">
+  <view  class="headnavabr">
+    <image src="../../img/icon.png"></image>
+    <view>暖心行动</view>
+  </view>
+  </view>
+
+ <!-- 搜索 -->
+  <view class="search">
+    <view class="searchContent">
+      <input class="seachText" type="text" confirm-type="search" placeholder="文章搜索" value="{{value}}" bindinput='expInput'></input>
+      <icon class="searchIcon" size='28' type='search'></icon>
+    </view>
+  </view>
+
+
+<!-- 轮播 -->
+  <view class='images'>
+    <swiper class='detail-imgs' indicator-active-color="#d3bfdc" indicator-dots="{{true}}" autoplay='{{true}}' interval="{{3000}}" duration="{{500}}" circular="{{true}}" bindchange='bindchange'>
+      <block wx:for="{{info.banners}}">
+        <swiper-item style="">
+          <image mode="widthFix" src="{{imgurl + item.pic_url}}" class='image-view'bindload="imageLoad" data-src='{{item}}'></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+<!-- 栏目 -->
+  <view class="model-container">
+    <view class="model-container-center">
+      <view class="icon">
+        <view class="icon-widht">
+          <view class="icon-item" wx:for="{{info.nav_icon_list}}">
+            <image src="{{imgurl + item.pic_url}}"></image>
+            <view class="icon-text">{{item.name}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+
+  <view class="all">
+    <scroll-view scroll-x="true">
+      <view class="scroll-item" wx:for="{{scroll}}">
+        <image></image>
+        <view class="scroll-text">
+          <view class="scroll-text1">{{item.scroll_text1}}</view>
+          <view class="scroll-text2">{{item.scroll_text2}}</view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+
+
+
+  <view class="model-container">
+    <view class="model-container-center">
+      <view class="daily">
+        <view class="follow">每日益关注</view>
+        <view class="public-welfare">
+          <image></image>
+          <view class="public-welfare-title">
+            <view class="public-welfare-child">
+              <view>儿童素养教育计划</view>
+              <view>梦想课让上学变的有趣</view>
+            </view>
+            <view class="public-welfare-btn">开启梦想中心</view>
+          </view>
+        </view>
+        <view class="loveheart" wx:for="{{info.offering_love}}">
+          <image src="{{imgurl + item.picture}}"></image>
+          <view class="lovehear-content">
+            <view>{{item.post_title}}</view>
+            <!-- <view class="donate">
+              <view>{{item.number}}人已捐助</view>
+              <view>爱心爱心</view>
+            </view> -->
+            <view>{{item.post_content}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+
+</view>

@@ -1,0 +1,38 @@
+
+<view wx:if='{{addtabbar==1}}' class="addtabbar">
+          <view class="tabbar-item"data-id="{{item.id}}" wx:for="{{tab_content}}">
+            <view class="tabbar-items  {{selecter ==  index ? 'add' : ''}}" data-index="{{index}}" bindtap="tabbar">{{item.title}}</view>
+          </view>
+        </view>
+
+<view class="">
+  <view class="read-container">
+    <view class="model-container-center">
+      <view class="list modelAll ">
+        <view wx:if='{{addtabbar==0}}' class="tabbar ">
+          <view class="tabbar-item"data-id="{{item.id}}" wx:for="{{tab_content}}">
+            <view class="tabbar-items  {{selecter ==  index ? 'add' : ''}}" data-index="{{index}}" bindtap="tabbar">{{item.title}}</view>
+          </view>
+        </view>
+        <view class="show" wx:if='{{show}}'>暂无更多陪伴志愿者</view>
+        <view>
+          <view class="lists"  wx:for="{{con_datas}}"  data-id="{{item.id}}" bindtap="order">
+            <image src="{{item.piture}}"></image>
+            <view class="lists-data">
+              <view style="font-size:36rpx;font-weight:bold;">{{item.name}}</view>
+              <view style="font-size:30rpx;color:#999;line-height:38rpx;">{{item.introduction}}</view>
+              <view class="tag_name">
+              <block wx:for='{{item.tag_name}}'>
+                <view>{{item.name}}</view>
+                </block>
+              </view>
+            </view>
+            <view class="btn">预约</view>
+          </view>
+        </view>
+
+      </view>
+    </view>
+  </view>
+</view>
+

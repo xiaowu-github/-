@@ -1,0 +1,45 @@
+<view class="backgrounds">
+  <view class="read-container">
+    <video id="myVideo" src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400"
+      enable-danmu controls></video>
+  </view>
+</view>
+
+
+<view class="read-container">
+  <view class="movie">
+    <view class="movie-name">
+      <view>电影名称</view>
+      <view class="movie-name-type">类型/国家/时长</view>
+      <view class="movie-name-time">上映时间：2019-09-13</view>
+    </view>
+    <view class="movie-introduce">
+      <view>影片简介</view>
+      <view>简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介</view>
+    </view>
+
+    <view class="hotpl">
+      <view>观后热评</view>
+      <view class="pldatails">
+        <view class="pldatails-top">
+          <image></image>
+          <view>
+            <view class="user-name">用户昵称</view>
+            <view class="pl-time">评论时间  2019-09-13</view>
+          </view>
+        </view>
+        <view class="pldatails-top">评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论</view>
+        <view class="movie-pl">
+          <view class="movie-pl-icon">
+            <image src="../../img/pinglun.png"></image>
+            22
+          </view>
+          <view  class="movie-pl-icon">
+            <image src="../../img/zan.png"></image>
+            52
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,176 @@
+.daily {
+  background-color: #fff;
+  border-radius: 15rpx;
+  /* margin-bottom: 110rpx; */
+}
+
+.donate>view:last-child {
+  /* width: 400rpx; */
+  font-size: 28rpx;
+  color: #757c82;
+  border-radius: 30rpx;
+  /* line-height: 80rpx; */
+  border: 2rpx solid #eee;
+  width: 150rpx;
+  text-align: center;
+}
+
+.loveheart:last-child {
+  padding-bottom: 30rpx;
+  /* margin: 30rpx 20rpx 0rpx 20rpx; */
+
+}
+
+.follow {
+  width: 680rpx;
+  margin: 0 auto;
+
+  padding-top: 30rpx;
+  font-size: 38rpx;
+}
+
+.stop{
+  width: 750rpx;
+  height: 500rpx;
+    overflow-x:hidden;
+    overflow-y:hidden;
+  box-sizing: border-box;
+
+}
+
+.bgpic{
+  width: 900rpx;
+  height: 500rpx;
+  transform: translateX(-120rpx) translateY(-105rpx) rotate(-15deg);
+  /* position: fixed; */
+  top: 0rpx;
+  /* z-index: -1; */
+  /* position: absolute ; */
+}
+
+
+.headnavabr{
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  justify-content: flex-start;
+  margin:   60rpx 20rpx 30rpx 20rpx;
+}
+
+
+.headnavabr image{
+  width: 50rpx;
+  height: 50rpx;
+  /* background-color:green; */
+  margin-right: 10rpx; 
+}
+
+.headnavabr>view{
+    color: #fff;
+    display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+}
+
+
+.public-welfare {
+  width: 680rpx;
+  height: 300rpx;
+  margin: 0 auto;
+  border-radius: 10rpx;
+  background-color: #fff;
+}
+
+.public-welfare image {
+  width: 680rpx;
+  height: 300rpx;
+  border-radius: 10rpx;
+  background-color: #ccc;
+  position: absolute;
+}
+
+.public-welfare-title {
+  width: 620rpx;
+  height: 100rpx;
+  position: relative;
+  bottom: -180rpx;
+  display: flex;
+  justify-content: space-between;
+  margin: 30rpx;
+}
+
+.public-welfare-child>view:first-child {
+  font-size: 36rpx;
+  color: #fff;
+}
+
+.public-welfare-child>view:last-child {
+  font-size: 30rpx;
+  color: #fff;
+  margin-top: 10rpx;
+}
+
+.public-welfare-btn {
+  width: 180rpx;
+  height: 60rpx;
+  margin-top: 20rpx;
+  background-color: red;
+  border-radius: 30rpx;
+  color: #fff;
+  font-size: 26rpx;
+  line-height: 60rpx;
+  text-align: center;
+}
+
+.loveheart {
+  width: 670rpx;
+  display: flex;
+  justify-content: space-between;
+  margin: auto 20rpx;
+  padding-top: 30rpx;
+}
+
+.loveheart>image {
+  width: 250rpx;
+  height: 180rpx;
+  border-radius: 15rpx;
+  background-color: #ccc;
+  /* margin: auto; */
+}
+
+.lovehear-content {
+  width: 400rpx;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
+  border-bottom: 2rpx solid #eee;
+  margin-left: 30rpx;
+}
+
+.lovehear-content>view:first-child {
+  font-size: 35rpx;
+  line-height: 50rpx;
+  overflow:hidden; 
+    text-overflow:ellipsis;
+    display:-webkit-box; /* autoprefixer: off */ 
+    -webkit-box-orient:vertical; /* autoprefixer: on */ 
+       -webkit-line-clamp:2
+}
+
+
+.donate {
+  display: flex;
+  justify-content: space-between;
+  width: 400rpx;
+  font-size: 28rpx;
+  color: #757c82;
+  padding-bottom: 20rpx;
+  padding-top: 20rpx;
+}
+
+.img{
+  width: 50rpx;
+  height: 50rpx;
+}
